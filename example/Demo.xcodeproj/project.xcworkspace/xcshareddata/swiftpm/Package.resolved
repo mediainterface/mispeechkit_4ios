@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mispeechkit_4ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mediainterface/mispeechkit_4ios",
+      "state" : {
+        "revision" : "13c5c45c240630a44f11d5fcfe7ac982f18313ab",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
