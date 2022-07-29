@@ -1,0 +1,144 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target x86_64-apple-ios14.5-macabi -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name iOSSDK
+import AVFoundation
+import AudioUnit
+import CoreMedia
+import Foundation
+import Network
+import Swift
+import UIKit
+import _Concurrency
+@_exported import iOSSDK
+@objc public protocol IRecognition {
+  @objc var id: Foundation.UUID? { get }
+  @objc var state: iOSSDK.SessionState { get }
+  @objc func initialize(_ context: iOSSDK.RecognitionContext, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func addWord(_ word: Swift.String, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func addWords(_ words: [Swift.String], completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func addWordWithDifferentWriting(_ word: iOSSDK.Word, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func addWordsWithDifferentWriting(_ words: [iOSSDK.Word], completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func start(previousText: Swift.String, followingText: Swift.String, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func stop(completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func submitText(_ text: Swift.String, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func cleanup(completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc func dispose(completion: @escaping ((Swift.Bool) -> Swift.Void))
+}
+@objc public enum SessionState : Swift.Int, Swift.Decodable, Swift.RawRepresentable {
+  case unknown = 0
+  case created = 1
+  case loading = 2
+  case ready = 3
+  case updating = 4
+  case inProcess = 5
+  case unloading = 6
+  case suspended = 7
+  case closed = 8
+  case error = 9
+  public typealias RawValue = Swift.String
+  public var rawValue: iOSSDK.SessionState.RawValue {
+    get
+  }
+  public init?(rawValue: iOSSDK.SessionState.RawValue)
+}
+@objc public class Word : ObjectiveC.NSObject, Swift.Encodable {
+  @objc final public let word: Swift.String
+  @objc final public let writtenAs: Swift.String?
+  @objc public init(word: Swift.String, writtenAs: Swift.String? = nil)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+@objc public class WebAPIClient : ObjectiveC.NSObject {
+  public init(_ server: Foundation.URL)
+  public var system: Swift.String?
+  public var user: Swift.String
+  public var password: Swift.String
+  public func auth(completion: @escaping (Swift.String?, iOSSDK.MIError?) -> Swift.Void)
+  public func getRecognitionServer(completion: @escaping (Swift.String?, iOSSDK.MIError?) -> Swift.Void)
+  public func importTextForAdaption(user: Swift.String, text: Swift.String, vocabulary: Swift.String? = nil, completion: @escaping (Foundation.UUID?, iOSSDK.MIError?) -> Swift.Void)
+  @objc deinit
+}
+@objc public class ApplicationContext : ObjectiveC.NSObject {
+  @objc public var system: Swift.String?
+  public init(system: Swift.String?)
+  @objc deinit
+}
+@objc public class MIError : ObjectiveC.NSObject {
+  @objc final public let sessionId: Foundation.UUID?
+  @objc final public let errorCode: Swift.Int
+  @objc final public let errorMessage: Swift.String
+  public init(sessionId: Foundation.UUID?, errorCode: Swift.Int, errorMessage: Swift.String)
+  @objc deinit
+}
+@objc public class RecognitionCore : ObjectiveC.NSObject, iOSSDK.IRecognition {
+  @objc public init(_ server: Foundation.URL, apiClient: iOSSDK.WebAPIClient, context: iOSSDK.ApplicationContext? = nil, delegate: iOSSDK.IRecognitionDelegate?)
+  @objc public var id: Foundation.UUID? {
+    get
+  }
+  @objc public var state: iOSSDK.SessionState {
+    get
+  }
+  @objc public func initialize(_ context: iOSSDK.RecognitionContext, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func addWord(_ word: Swift.String, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func addWords(_ words: [Swift.String], completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func addWordWithDifferentWriting(_ word: iOSSDK.Word, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func addWordsWithDifferentWriting(_ words: [iOSSDK.Word], completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func start(previousText: Swift.String, followingText: Swift.String, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func stop(completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func submitText(_ text: Swift.String, completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func cleanup(completion: @escaping ((Swift.Bool) -> Swift.Void))
+  @objc public func dispose(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc deinit
+}
+@objc public protocol IRecognitionDelegate {
+  @objc optional func onStateChanged(state: iOSSDK.SessionState)
+  @objc optional func onError(error: Swift.String)
+  @objc optional func onResult(result: Swift.String)
+  @objc optional func onPreviewResult(previewResult: Swift.String)
+  @objc optional func onVoiceLevelChanged(level: Swift.Float)
+}
+@_inheritsConvenienceInitializers @objc public class SpeaKING : ObjectiveC.NSObject {
+  @objc public static func getRecognition(_ server: Swift.String?, context: iOSSDK.AuthenticationContext? = nil, delegate: iOSSDK.IRecognitionDelegate, completion: @escaping (iOSSDK.IRecognition?, iOSSDK.MIError?) -> Swift.Void)
+  @objc public static func login(_ server: Swift.String?, context: iOSSDK.AuthenticationContext? = nil, completion: @escaping (iOSSDK.MIError?) -> Swift.Void)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class AuthenticationContext : ObjectiveC.NSObject {
+  @objc public var system: Swift.String?
+  @objc public var user: Swift.String?
+  @objc public var password: Swift.String?
+  public init(system: Swift.String? = nil, user: Swift.String? = nil, password: Swift.String? = nil)
+  @objc deinit
+}
+public enum LogEvent : Swift.String {
+  case error
+  case info
+  case warning
+  case functionIn
+  case functionOut
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@objc public class RecognitionContext : ObjectiveC.NSObject {
+  @objc public var user: Swift.String
+  @objc public var vocabulary: Swift.String?
+  @objc public var previewResults: Swift.Bool
+  @objc public var debug: Swift.Bool
+  public init(user: Swift.String, vocabulary: Swift.String? = nil, previewResults: Swift.Bool = false, debug: Swift.Bool = false)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class Logger {
+  public func log(message: Swift.String, event: iOSSDK.LogEvent, fileName: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public func methodIn(_ args: Any..., fileName: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public func methodOut(_ args: Any..., fileName: Swift.String = #file, line: Swift.Int = #line, column: Swift.Int = #column, funcName: Swift.String = #function)
+  public func getLatestLog() -> Swift.String
+  @objc deinit
+}
+extension iOSSDK.SessionState : Swift.Equatable {}
+extension iOSSDK.SessionState : Swift.Hashable {}
+extension iOSSDK.LogEvent : Swift.Equatable {}
+extension iOSSDK.LogEvent : Swift.Hashable {}
+extension iOSSDK.LogEvent : Swift.RawRepresentable {}
