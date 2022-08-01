@@ -1,6 +1,6 @@
 # ``miSpeechKit``
 
-The miSpeechKit helps you to use speech recognition in your application.''
+The miSpeechKit helps you to use speech recognition in your application.
 
 
 ## Overview
