@@ -12,8 +12,7 @@
 		A717823B28917631003DA957 /* OptionsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717823A28917631003DA957 /* OptionsButton.swift */; };
 		A717823D28917706003DA957 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717823C28917706003DA957 /* OptionsView.swift */; };
 		A717823F289184B9003DA957 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717823E289184B9003DA957 /* Configuration.swift */; };
-		A71782452893FB8F003DA957 /* iOSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A71782442893FB8F003DA957 /* iOSSDK */; };
-		A7178248289402B4003DA957 /* iOSSDK in Frameworks */ = {isa = PBXBuildFile; productRef = A7178247289402B4003DA957 /* iOSSDK */; };
+		A717824A2897D198003DA957 /* miSpeechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A71782492897D198003DA957 /* miSpeechKit */; };
 		A730A29E289135BC00049F4E /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730A29D289135BC00049F4E /* DemoApp.swift */; };
 		A730A2A0289135BC00049F4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730A29F289135BC00049F4E /* ContentView.swift */; };
 		A730A2A2289135BD00049F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A730A2A1289135BD00049F4E /* Assets.xcassets */; };
@@ -55,8 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A71782452893FB8F003DA957 /* iOSSDK in Frameworks */,
-				A7178248289402B4003DA957 /* iOSSDK in Frameworks */,
+				A717824A2897D198003DA957 /* miSpeechKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,8 +145,7 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
-				A71782442893FB8F003DA957 /* iOSSDK */,
-				A7178247289402B4003DA957 /* iOSSDK */,
+				A71782492897D198003DA957 /* miSpeechKit */,
 			);
 			productName = demoapp;
 			productReference = A730A29A289135BC00049F4E /* Demo.app */;
@@ -431,14 +428,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A71782442893FB8F003DA957 /* iOSSDK */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = iOSSDK;
-		};
-		A7178247289402B4003DA957 /* iOSSDK */ = {
+		A71782492897D198003DA957 /* miSpeechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A7178246289402B4003DA957 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */;
-			productName = iOSSDK;
+			productName = miSpeechKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

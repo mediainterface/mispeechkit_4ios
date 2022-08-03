@@ -25,7 +25,7 @@ Information about the RecognitionDelegate can be found here: ``IRecognitionDeleg
 
 ``` swift
 import Foundation
-import iOSSDK
+import miSpeechKit
 
 public class QuickStart: IRecognitionDelegate {
     

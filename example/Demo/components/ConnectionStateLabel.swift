@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import iOSSDK
+import miSpeechKit
 
 struct ConnectionStateLabel: View {
     private var state: SessionState = .closed

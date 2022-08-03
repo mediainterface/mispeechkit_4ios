@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import iOSSDK
+import miSpeechKit
 
 class RecognitionCore: ObservableObject, IRecognitionDelegate {
     private var recognition: IRecognition?
