@@ -1,4 +1,5 @@
-# ``miSpeechKit``
+# miSpeechKit
+###### [Full Documentation](https://mediainterface.github.io/mispeechkit_4ios/documentation/mispeechkit/)
 
 miSpeechKit helps you to use speech recognition in your application.
 
