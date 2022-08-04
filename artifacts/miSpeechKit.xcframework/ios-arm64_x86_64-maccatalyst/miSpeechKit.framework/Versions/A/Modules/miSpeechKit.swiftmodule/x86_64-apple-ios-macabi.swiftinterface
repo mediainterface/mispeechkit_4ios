@@ -48,16 +48,6 @@ import _Concurrency
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
-@objc public class WebAPIClient : ObjectiveC.NSObject {
-  public init(_ server: Foundation.URL)
-  public var system: Swift.String?
-  public var user: Swift.String
-  public var password: Swift.String
-  public func auth(completion: @escaping (Swift.String?, miSpeechKit.MIError?) -> Swift.Void)
-  public func getRecognitionServer(completion: @escaping (Swift.String?, miSpeechKit.MIError?) -> Swift.Void)
-  public func importTextForAdaption(user: Swift.String, text: Swift.String, vocabulary: Swift.String? = nil, completion: @escaping (Foundation.UUID?, miSpeechKit.MIError?) -> Swift.Void)
-  @objc deinit
-}
 @objc public class ApplicationContext : ObjectiveC.NSObject {
   @objc public var system: Swift.String?
   public init(system: Swift.String?)
@@ -70,8 +60,7 @@ import _Concurrency
   public init(sessionId: Foundation.UUID?, errorCode: Swift.Int, errorMessage: Swift.String)
   @objc deinit
 }
-@objc public class RecognitionCore : ObjectiveC.NSObject, miSpeechKit.IRecognition {
-  @objc public init(_ server: Foundation.URL, apiClient: miSpeechKit.WebAPIClient, context: miSpeechKit.ApplicationContext? = nil, delegate: miSpeechKit.IRecognitionDelegate?)
+@_hasMissingDesignatedInitializers @objc public class RecognitionCore : ObjectiveC.NSObject, miSpeechKit.IRecognition {
   @objc public var id: Foundation.UUID? {
     get
   }

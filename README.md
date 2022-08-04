@@ -19,9 +19,9 @@ After adding the Framework to your project you can start using it in your applic
 
 #### Quickstart
 
-This is a basic implementation of the miSpeechKit. Further information about the methods can be found here: ``IRecognition``.
+This is a basic implementation of the miSpeechKit. Further information about the methods can be found here: [IRecognition](https://mediainterface.github.io/mispeechkit_4ios/documentation/mispeechkit/irecognition).
 
-Information about the RecognitionDelegate can be found here: ``IRecognitionDelegate``
+Information about the RecognitionDelegate can be found here: [IRecognitionDelegate](https://mediainterface.github.io/mispeechkit_4ios/documentation/mispeechkit/irecognitiondelegate)
 
 ``` swift
 import Foundation

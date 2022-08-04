@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/miSpeechKit-Swift.h</key>
 		<data>
-		cfHKAEqYSKSW9/P1PlGR/ZMl74Y=
+		fqgtQ1cGIMunMwbb5QrmNvsjB1c=
 		</data>
 		<key>Headers/miSpeechKit.h</key>
 		<data>
@@ -18,15 +18,15 @@
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		+oQdCafUWW/zBRMyqcN2t26VEuk=
+		udfn5kD265HsmcW08iFqdoYCjz8=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		G0IZ0whoxKkWtrzbSjPm8yRIoAk=
+		quDSqM0kRLZtYffgI0vyaJ+zwRc=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		WlJD8D5XhX1gZbXTTap0m2osmmg=
+		ff1nY/dRuoQLGdqYHhRFXCLptpQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -48,7 +48,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			NI9AsHZVzJjKVcdTwJpnzlAemHOd44P1pdN+UmKVXk0=
+			Y5w/rYwx9OFVfNrT/MIT2m7qUNNq8yoGfT9qatT8wa0=
 			</data>
 		</dict>
 		<key>Headers/miSpeechKit.h</key>
@@ -62,21 +62,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lq6QHFausMhEqFugXIuMpSOjac+CKE2cuWDe+fuGGzc=
+			8fRvoXgWnR9l9t6aEM9mE3LVLxvaoJWrAWGkrQJXJrw=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			bvmmpdcYggZBG8QCVNgipLXakOM5zdSdOKvqDMv19Bo=
+			oqQ2A2h+glA1taLo4COMuAd/BwPO33Zf2nW2DPmNLPs=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Vk7PYJEF94joVdhZiLIJnXeapvrEIb+h8dckn3MQoPo=
+			aP8lyLNU3ZEByAZpJBVFVj9lWPGd3lIlmSt4WZrQwi8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

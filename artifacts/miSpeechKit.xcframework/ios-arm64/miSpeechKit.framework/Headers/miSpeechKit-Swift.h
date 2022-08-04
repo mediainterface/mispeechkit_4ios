@@ -458,13 +458,10 @@ SWIFT_CLASS("_TtC11miSpeechKit18RecognitionContext")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-@class NSURL;
-@class WebAPIClient;
 
 /// The Core Object to use speech recognition with the SDK.
 SWIFT_CLASS("_TtC11miSpeechKit15RecognitionCore")
 @interface RecognitionCore : NSObject <IRecognition>
-- (nonnull instancetype)init:(NSURL * _Nonnull)server apiClient:(WebAPIClient * _Nonnull)apiClient context:(ApplicationContext * _Nullable)context delegate:(id <IRecognitionDelegate> _Nullable)delegate OBJC_DESIGNATED_INITIALIZER;
 /// The current Session Id.
 /// If this Id is nil there is no session initialized.
 @property (nonatomic, readonly, copy) NSUUID * _Nullable id;
@@ -704,14 +701,6 @@ SWIFT_CLASS("_TtC11miSpeechKit8SpeaKING")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-
-
-/// An object that coordinates web requests against the SpeaKING Web API.
-SWIFT_CLASS("_TtC11miSpeechKit12WebAPIClient")
-@interface WebAPIClient : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
 
 
 /// An Object that specifies a word to add temporarely to a vocabulary
