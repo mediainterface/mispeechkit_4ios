@@ -5,8 +5,8 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mediainterface/mispeechkit_4ios",
       "state" : {
-        "revision" : "335cd28ce93a0a50cae956d44f178e541b5e5aff",
-        "version" : "1.0.0"
+        "revision" : "23e9f3e1ae9d6b75ddce78a6407643438600dd99",
+        "version" : "1.2.0"
       }
     }
   ],
