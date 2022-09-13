@@ -64,9 +64,12 @@ class RecognitionCore: ObservableObject, IRecognitionDelegate {
         self.error = nil
         self.result = ""
         self.isRecording = false
+        let server = !self.config.server.isEmpty
+            ? self.config.server
+            : nil
         
         let context = AuthenticationContext(system: self.config.system, user: self.config.user, password: self.config.password)
-        SpeaKING.getRecognition(self.config.server, context: context, delegate: self) { recognition, error in
+        SpeaKING.getRecognition(server, context: context, delegate: self) { recognition, error in
             if (nil != error) {
                 self.onError(error: error!.errorMessage)
             }

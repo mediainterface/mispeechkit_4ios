@@ -12,13 +12,14 @@
 		A717823B28917631003DA957 /* OptionsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717823A28917631003DA957 /* OptionsButton.swift */; };
 		A717823D28917706003DA957 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717823C28917706003DA957 /* OptionsView.swift */; };
 		A717823F289184B9003DA957 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A717823E289184B9003DA957 /* Configuration.swift */; };
-		A717824A2897D198003DA957 /* miSpeechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A71782492897D198003DA957 /* miSpeechKit */; };
 		A730A29E289135BC00049F4E /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730A29D289135BC00049F4E /* DemoApp.swift */; };
 		A730A2A0289135BC00049F4E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730A29F289135BC00049F4E /* ContentView.swift */; };
 		A730A2A2289135BD00049F4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A730A2A1289135BD00049F4E /* Assets.xcassets */; };
 		A730A2A5289135BD00049F4E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A730A2A4289135BD00049F4E /* Preview Assets.xcassets */; };
 		A730A2B0289155AC00049F4E /* ScrollableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730A2AF289155AC00049F4E /* ScrollableText.swift */; };
 		A730A2B2289158C600049F4E /* ConnectionStateLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A730A2B1289158C600049F4E /* ConnectionStateLabel.swift */; };
+		A781E7C728CF24E400D569D9 /* miSpeechKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A781E7C628CF24E400D569D9 /* miSpeechKit.xcframework */; };
+		A781E7C828CF24E400D569D9 /* miSpeechKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A781E7C628CF24E400D569D9 /* miSpeechKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A781E7C828CF24E400D569D9 /* miSpeechKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,6 +49,7 @@
 		A730A2A4289135BD00049F4E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A730A2AF289155AC00049F4E /* ScrollableText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollableText.swift; sourceTree = "<group>"; };
 		A730A2B1289158C600049F4E /* ConnectionStateLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionStateLabel.swift; sourceTree = "<group>"; };
+		A781E7C628CF24E400D569D9 /* miSpeechKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = miSpeechKit.xcframework; path = "../../SpeaKING iOS/miSpeechKit/build/miSpeechKit.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A717824A2897D198003DA957 /* miSpeechKit in Frameworks */,
+				A781E7C728CF24E400D569D9 /* miSpeechKit.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +74,7 @@
 		A71782432893FB8F003DA957 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A781E7C628CF24E400D569D9 /* miSpeechKit.xcframework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -145,7 +149,6 @@
 			);
 			name = Demo;
 			packageProductDependencies = (
-				A71782492897D198003DA957 /* miSpeechKit */,
 			);
 			productName = demoapp;
 			productReference = A730A29A289135BC00049F4E /* Demo.app */;
@@ -341,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = A36H26323W;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = Spracherkennung;
@@ -371,7 +374,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
-				DEVELOPMENT_TEAM = A36H26323W;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMicrophoneUsageDescription = Spracherkennung;
@@ -426,14 +429,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		A71782492897D198003DA957 /* miSpeechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A7178246289402B4003DA957 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */;
-			productName = miSpeechKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A730A292289135BC00049F4E /* Project object */;
 }

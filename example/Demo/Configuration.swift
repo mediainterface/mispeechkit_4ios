@@ -8,7 +8,7 @@
 import Foundation
 
 class Configuration : Codable, ObservableObject {
-    @Published public var server: String = "https://demo.mediainterface.de"
+    @Published public var server: String = "demo.mediainterface.de"
     @Published public var system: String = ""
     @Published public var user: String = ""
     @Published public var password: String = ""
