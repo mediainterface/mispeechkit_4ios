@@ -6,6 +6,6 @@ framework module miSpeechKit {
 }
 
 module miSpeechKit.Swift {
-    header "miSpeechKit-Swift.h"
-    requires objc
+  header "miSpeechKit-Swift.h"
+  requires objc
 }
