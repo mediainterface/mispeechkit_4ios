@@ -1,6 +1,6 @@
 //
-//  iOSSDK.h
-//  iOSSDK
+//  miSpeechKit.h
+//  miSpeechKit
 //
 //  Created by Curth, Jonas | MediaInterface GmbH on 16.11.21.
 //

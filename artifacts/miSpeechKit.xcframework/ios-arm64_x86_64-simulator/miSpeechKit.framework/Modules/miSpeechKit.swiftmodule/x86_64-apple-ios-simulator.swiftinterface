@@ -19,6 +19,12 @@ import _StringProcessing
   }
   @objc deinit
 }
+@_hasMissingDesignatedInitializers public class VoiceLevelChangedEventArgs {
+  public var voiceLevel: Swift.Float {
+    get
+  }
+  @objc deinit
+}
 @objc public enum SessionState : Swift.Int, Swift.Decodable, Swift.RawRepresentable {
   case unknown = 0
   case created = 1
@@ -36,12 +42,20 @@ import _StringProcessing
   }
   public init?(rawValue: miSpeechKit.SessionState.RawValue)
 }
+@_hasMissingDesignatedInitializers public class AudioStateChangedEventArgs {
+  public var isRecording: Swift.Bool {
+    get
+  }
+  @objc deinit
+}
 public protocol IRecognition {
   var state: miSpeechKit.SessionState { get }
   var errorOccured: miSpeechKit.Event<miSpeechKit.ErrorOccuredEventArgs> { get }
   var previewChanged: miSpeechKit.Event<miSpeechKit.PreviewChangedEventArgs> { get }
   var resultChanged: miSpeechKit.Event<miSpeechKit.ResultChangedEventArgs> { get }
   var stateChanged: miSpeechKit.Event<miSpeechKit.StateChangedEventArgs> { get }
+  var audioStateChanged: miSpeechKit.Event<miSpeechKit.AudioStateChangedEventArgs> { get }
+  var voiceLevelChanged: miSpeechKit.Event<miSpeechKit.VoiceLevelChangedEventArgs> { get }
   #if compiler(>=5.3) && $AsyncAwait
   func initializeAsync(_ context: miSpeechKit.IRecognitionContext) async throws
   #endif
