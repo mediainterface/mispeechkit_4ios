@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A7297D4F29AC9EC100A71635 /* miSpeechApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D4E29AC9EC100A71635 /* miSpeechApp.swift */; };
+		A7297D5329AC9EC200A71635 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7297D5229AC9EC200A71635 /* Assets.xcassets */; };
+		A7297D5629AC9EC200A71635 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7297D5529AC9EC200A71635 /* Preview Assets.xcassets */; };
+		A7297D5E29AC9F1800A71635 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D5D29AC9F1800A71635 /* LoginView.swift */; };
+		A7297D6429AC9FC000A71635 /* OptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D6029AC9FBF00A71635 /* OptionsView.swift */; };
+		A7297D6529AC9FC000A71635 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D6129AC9FC000A71635 /* SplashView.swift */; };
+		A7297D6629AC9FC000A71635 /* SpeechView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D6229AC9FC000A71635 /* SpeechView.swift */; };
+		A7297D7029ACA00600A71635 /* TextContextChangedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D6A29ACA00600A71635 /* TextContextChangedDelegate.swift */; };
+		A7297D7229ACA00600A71635 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D6C29ACA00600A71635 /* CustomTextField.swift */; };
+		A7297D7329ACA00600A71635 /* OptionsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D6D29ACA00600A71635 /* OptionsButton.swift */; };
+		A7297D7829ACA06500A71635 /* RecognitionCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D7529ACA06500A71635 /* RecognitionCore.swift */; };
+		A7297D7929ACA06500A71635 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D7629ACA06500A71635 /* Configuration.swift */; };
+		A7297D7A29ACA06500A71635 /* TextContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D7729ACA06500A71635 /* TextContext.swift */; };
+		A7297D8229ACA26A00A71635 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A7297D8129ACA26A00A71635 /* KeychainSwift */; };
+		A736CA0129AF582E0011D340 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A736CA0029AF582E0011D340 /* Card.swift */; };
+		A7415F4429B09FB1009EFF33 /* miSpeechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7415F4329B09FB1009EFF33 /* miSpeechKit */; };
+		A7CF2E3629ACD3C30002FF84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF2E3529ACD3C30002FF84 /* ContentView.swift */; };
+		A7E3A34129B0819300CC1A66 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A34029B0819300CC1A66 /* CircularButton.swift */; };
+		A7EF879E29AE3D2E00503021 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF879D29AE3D2E00503021 /* LoginForm.swift */; };
+		A7EF87A029AE4EEF00503021 /* BorderedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF879F29AE4EEF00503021 /* BorderedTextField.swift */; };
+		A7EF87A229AE50D600503021 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF87A129AE50D600503021 /* LoginButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A7A86A8629B09C6300C60266 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A7297D4B29AC9EC100A71635 /* miSpeech.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miSpeech.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A7297D4E29AC9EC100A71635 /* miSpeechApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = miSpeechApp.swift; sourceTree = "<group>"; };
+		A7297D5229AC9EC200A71635 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A7297D5529AC9EC200A71635 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A7297D5D29AC9F1800A71635 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A7297D6029AC9FBF00A71635 /* OptionsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsView.swift; sourceTree = "<group>"; };
+		A7297D6129AC9FC000A71635 /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		A7297D6229AC9FC000A71635 /* SpeechView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechView.swift; sourceTree = "<group>"; };
+		A7297D6A29ACA00600A71635 /* TextContextChangedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextContextChangedDelegate.swift; sourceTree = "<group>"; };
+		A7297D6C29ACA00600A71635 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		A7297D6D29ACA00600A71635 /* OptionsButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionsButton.swift; sourceTree = "<group>"; };
+		A7297D7529ACA06500A71635 /* RecognitionCore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecognitionCore.swift; sourceTree = "<group>"; };
+		A7297D7629ACA06500A71635 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
+		A7297D7729ACA06500A71635 /* TextContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextContext.swift; sourceTree = "<group>"; };
+		A736CA0029AF582E0011D340 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A7CF2E3529ACD3C30002FF84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A7E3A34029B0819300CC1A66 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
+		A7EF879D29AE3D2E00503021 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
+		A7EF879F29AE4EEF00503021 /* BorderedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BorderedTextField.swift; sourceTree = "<group>"; };
+		A7EF87A129AE50D600503021 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A7297D4829AC9EC100A71635 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7297D8229ACA26A00A71635 /* KeychainSwift in Frameworks */,
+				A7415F4429B09FB1009EFF33 /* miSpeechKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A7297D4229AC9EC000A71635 = {
+			isa = PBXGroup;
+			children = (
+				A7297D4D29AC9EC100A71635 /* MISpeech */,
+				A7297D4C29AC9EC100A71635 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A7297D4C29AC9EC100A71635 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7297D4B29AC9EC100A71635 /* miSpeech.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A7297D4D29AC9EC100A71635 /* MISpeech */ = {
+			isa = PBXGroup;
+			children = (
+				A7297D4E29AC9EC100A71635 /* miSpeechApp.swift */,
+				A7297D6729AC9FE700A71635 /* Models */,
+				A7297D6829ACA00600A71635 /* Components */,
+				A7297D5C29AC9F0500A71635 /* Views */,
+				A7297D5229AC9EC200A71635 /* Assets.xcassets */,
+				A7297D5429AC9EC200A71635 /* Preview Content */,
+			);
+			path = MISpeech;
+			sourceTree = "<group>";
+		};
+		A7297D5429AC9EC200A71635 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A7297D5529AC9EC200A71635 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A7297D5C29AC9F0500A71635 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A7CF2E3529ACD3C30002FF84 /* ContentView.swift */,
+				A7297D6129AC9FC000A71635 /* SplashView.swift */,
+				A7297D5D29AC9F1800A71635 /* LoginView.swift */,
+				A7297D6229AC9FC000A71635 /* SpeechView.swift */,
+				A7297D6029AC9FBF00A71635 /* OptionsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A7297D6729AC9FE700A71635 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A7297D7629ACA06500A71635 /* Configuration.swift */,
+				A7297D7529ACA06500A71635 /* RecognitionCore.swift */,
+				A7297D7729ACA06500A71635 /* TextContext.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A7297D6829ACA00600A71635 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				A7297D6A29ACA00600A71635 /* TextContextChangedDelegate.swift */,
+				A7297D6C29ACA00600A71635 /* CustomTextField.swift */,
+				A7297D6D29ACA00600A71635 /* OptionsButton.swift */,
+				A7EF879D29AE3D2E00503021 /* LoginForm.swift */,
+				A7EF879F29AE4EEF00503021 /* BorderedTextField.swift */,
+				A7EF87A129AE50D600503021 /* LoginButton.swift */,
+				A736CA0029AF582E0011D340 /* Card.swift */,
+				A7E3A34029B0819300CC1A66 /* CircularButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A7297D4A29AC9EC100A71635 /* miSpeech */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A7297D5929AC9EC200A71635 /* Build configuration list for PBXNativeTarget "miSpeech" */;
+			buildPhases = (
+				A7297D4729AC9EC100A71635 /* Sources */,
+				A7297D4829AC9EC100A71635 /* Frameworks */,
+				A7297D4929AC9EC100A71635 /* Resources */,
+				A7A86A8629B09C6300C60266 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = miSpeech;
+			packageProductDependencies = (
+				A7297D8129ACA26A00A71635 /* KeychainSwift */,
+				A7415F4329B09FB1009EFF33 /* miSpeechKit */,
+			);
+			productName = MISpeech;
+			productReference = A7297D4B29AC9EC100A71635 /* miSpeech.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A7297D4329AC9EC000A71635 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					A7297D4A29AC9EC100A71635 = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = A7297D4629AC9EC000A71635 /* Build configuration list for PBXProject "miSpeech" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A7297D4229AC9EC000A71635;
+			packageReferences = (
+				A7297D8029ACA26A00A71635 /* XCRemoteSwiftPackageReference "keychain-swift" */,
+				A7415F4229B09FB1009EFF33 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */,
+			);
+			productRefGroup = A7297D4C29AC9EC100A71635 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A7297D4A29AC9EC100A71635 /* miSpeech */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A7297D4929AC9EC100A71635 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7297D5629AC9EC200A71635 /* Preview Assets.xcassets in Resources */,
+				A7297D5329AC9EC200A71635 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A7297D4729AC9EC100A71635 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A736CA0129AF582E0011D340 /* Card.swift in Sources */,
+				A7297D7029ACA00600A71635 /* TextContextChangedDelegate.swift in Sources */,
+				A7EF87A029AE4EEF00503021 /* BorderedTextField.swift in Sources */,
+				A7297D5E29AC9F1800A71635 /* LoginView.swift in Sources */,
+				A7297D4F29AC9EC100A71635 /* miSpeechApp.swift in Sources */,
+				A7297D6529AC9FC000A71635 /* SplashView.swift in Sources */,
+				A7297D6629AC9FC000A71635 /* SpeechView.swift in Sources */,
+				A7297D7829ACA06500A71635 /* RecognitionCore.swift in Sources */,
+				A7EF879E29AE3D2E00503021 /* LoginForm.swift in Sources */,
+				A7297D7929ACA06500A71635 /* Configuration.swift in Sources */,
+				A7297D6429AC9FC000A71635 /* OptionsView.swift in Sources */,
+				A7CF2E3629ACD3C30002FF84 /* ContentView.swift in Sources */,
+				A7297D7329ACA00600A71635 /* OptionsButton.swift in Sources */,
+				A7297D7A29ACA06500A71635 /* TextContext.swift in Sources */,
+				A7EF87A229AE50D600503021 /* LoginButton.swift in Sources */,
+				A7297D7229ACA00600A71635 /* CustomTextField.swift in Sources */,
+				A7E3A34129B0819300CC1A66 /* CircularButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A7297D5729AC9EC200A71635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A7297D5829AC9EC200A71635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A7297D5A29AC9EC200A71635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"miSpeech/Preview Content\"";
+				DEVELOPMENT_TEAM = 4WSS93C9JJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = miSpeech;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Das Mikrofon wird benötigt, um Audio aufzunehmen, welche dann in Text umgewandelt werden kann.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.mediainterface.miSpeech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A7297D5B29AC9EC200A71635 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"miSpeech/Preview Content\"";
+				DEVELOPMENT_TEAM = 4WSS93C9JJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = miSpeech;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Das Mikrofon wird benötigt, um Audio aufzunehmen, welche dann in Text umgewandelt werden kann.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = de.mediainterface.miSpeech;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A7297D4629AC9EC000A71635 /* Build configuration list for PBXProject "miSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7297D5729AC9EC200A71635 /* Debug */,
+				A7297D5829AC9EC200A71635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A7297D5929AC9EC200A71635 /* Build configuration list for PBXNativeTarget "miSpeech" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A7297D5A29AC9EC200A71635 /* Debug */,
+				A7297D5B29AC9EC200A71635 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A7297D8029ACA26A00A71635 /* XCRemoteSwiftPackageReference "keychain-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/evgenyneu/keychain-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A7415F4229B09FB1009EFF33 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mediainterface/mispeechkit_4ios";
+			requirement = {
+				branch = "v2-preview";
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A7297D8129ACA26A00A71635 /* KeychainSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7297D8029ACA26A00A71635 /* XCRemoteSwiftPackageReference "keychain-swift" */;
+			productName = KeychainSwift;
+		};
+		A7415F4329B09FB1009EFF33 /* miSpeechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7415F4229B09FB1009EFF33 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */;
+			productName = miSpeechKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A7297D4329AC9EC000A71635 /* Project object */;
+}

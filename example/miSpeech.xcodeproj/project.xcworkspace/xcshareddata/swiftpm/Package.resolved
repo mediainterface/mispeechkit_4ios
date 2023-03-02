@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "keychain-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/evgenyneu/keychain-swift",
+      "state" : {
+        "branch" : "master",
+        "revision" : "c1fde55798b164cad44b5e23cfa2f0f1ebcd76af"
+      }
+    },
+    {
+      "identity" : "mispeechkit_4ios",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mediainterface/mispeechkit_4ios",
+      "state" : {
+        "branch" : "v2-preview",
+        "revision" : "a5317535a1cda85ded87681dbcd302d305c6a1f0"
+      }
+    }
+  ],
+  "version" : 2
+}
