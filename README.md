@@ -1,5 +1,4 @@
-# miSpeechKit 
-[Full Documentation](https://mediainterface.github.io/mispeechkit_4ios/documentation/mispeechkit/)</a>
+# ``miSpeechKit``
 
 miSpeechKit helps you to use speech recognition in your application.
 
@@ -20,9 +19,9 @@ After adding the Framework to your project you can start using it in your applic
 
 #### Quickstart
 
-This is a basic implementation of the miSpeechKit. Further information about the methods can be found here: [IRecognition](https://mediainterface.github.io/mispeechkit_4ios/documentation/mispeechkit/irecognition).
+This is a basic implementation of the miSpeechKit. Further information about the methods can be found here: ``IRecognition``.
 
-Information about the RecognitionDelegate can be found here: [IRecognitionDelegate](https://mediainterface.github.io/mispeechkit_4ios/documentation/mispeechkit/irecognitiondelegate)
+Information about the RecognitionDelegate can be found here: ``IRecognitionDelegate``
 
 ``` swift
 import Foundation
@@ -30,7 +29,7 @@ import miSpeechKit
 
 public class QuickStart: IRecognitionDelegate {
     
-    public func onResult(result: String) {
+    public func onResult(result: ResultChangedEventArgs) {
         print(result)
     }
 
@@ -38,41 +37,33 @@ public class QuickStart: IRecognitionDelegate {
         print(error)
     }
 
-    public func onStateChanged(newState: SessionState){
-        print(newState)
+    public func onStateChanged(e: StateChangedEventArgs){
+        print(e.state)
     }
         
-    public func initialize() {
-        let context = AuthenticationContext(system: "Testsystem", user: "Diktierer", password: "")
-        SpeaKING.getRecognition("http://SpeaKINGServer", context: context, delegate: self) { recognition, error in
-            if (nil != error) {
-                print(error: error!.errorMessage)
-            }
-            else {
-                self.recognition = recognition
-                let recognitionContext = RecognitionContext(user: "Diktierer", vocabulary: "Beispielwortschatz")
-                self.recognition?.initialize(recognitionContext, completion: { _ in })
-            }
-        }
+    public func initialize() async throws {
+        let context = try MISpeech.createAuthenticationContext(user: username, password: password)
+        let recognitionContext = try MISpeech.createRecognitionContext(user: "Test")
+
+        self.recognition = try await MISpeech.createRecognitionAsync(server: nil, context: context)
+
+        self.recognition?.stateChanged.addHandler(handler: onStateChanged)
+        self.recognition?.resultChanged.addHandler(handler: onResult)
+        self.recognition?.errorOccured.addHandler(handler: onError)
+
+        try await self.recognition?.initializeAsync(recognitionContext)
     }
 
     public func start() {
-        if nil != self.recognition {
-            self.recognition?.start(previousText: "", followingText: "", completion: { success in })
-        }
+        try await self.recognition!.startAsync(previousText: "", followingText: "")
     }
 
     public func stop() {
-        if nil != self.recognition {
-            self.recognition?.stop(completion: { success in })
-        }
+        try await self.recognition!.stopAsync()
     }
 
     public func cleanup() {
-        if nil != self.recognition {
-            self.recognition?.cleanup(completion: { success in })
-        }
+        try await self.recognition!.cleanupAsync()
     }
 }    
 ```
-
