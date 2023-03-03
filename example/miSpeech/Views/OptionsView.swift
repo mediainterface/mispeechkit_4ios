@@ -12,29 +12,27 @@ struct OptionsView: View {
     @Environment(\.presentationMode) var presentationMode
     
     var body: some View {
-        HStack(alignment: .top) {
-            VStack(alignment: .leading) {
-                NavigationLink(destination: LoginView(), isActive: $isLoggedOut) { EmptyView() }
-                
-                TextField("Wortschatz", text: $config.vocabulary)
-                
-                Menu("Sprache auswählen") {
-                    Picker("Sprache auswählen", selection: $selectedLanguage) {
-                        Text("Deutsch").tag("de")
-                        Text("Französisch").tag("fr")
-                        Text("Englisch").tag("en")
-                    }
-                }
-                Spacer()
-                Button {
-                    Task { try await self.recognition.cleanup() }
-                    Configuration.singleton.logout()
-                    isLoggedOut = true
-                } label: {
-                    Text("Abmelden")
+        
+        NavigationLink(destination: LoginView(), isActive: $isLoggedOut) { EmptyView() }
+        Form {
+            Section("Sprache") {
+                Picker("Sprache auswählen", selection: $selectedLanguage) {
+                    Text("Deutsch").tag("de")
+                    Text("Französisch").tag("fr")
+                    Text("Englisch").tag("en")
                 }
             }
-            .padding()
+
+            Section(footer: HStack {
+                Spacer()
+                LoginButton(title: "Abmelden") {
+                    Configuration.singleton.logout()
+                    isLoggedOut = true
+                }
+                Spacer()
+            }) {
+                EmptyView()
+            }
         }
         .onAppear {
             selectedLanguage = config.language

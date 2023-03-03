@@ -3,7 +3,7 @@ import SwiftUI
 struct LoginButton: View {
     var title: String
     var perform: () -> Void
-    var isEnabled: Bool
+    var isEnabled: Bool = true
     
     var body: some View {
         Button {

@@ -32,7 +32,15 @@ struct SpeechView: View {
         
         return VStack {
             NavigationLink(destination: OptionsView(), isActive: $shouldOpenOptions) { EmptyView() }
-
+            HStack{
+                Text(recognition.preview)
+                    .frame(height: 10)
+                    .foregroundColor(.gray)
+                    .truncationMode(.head)
+                    .lineLimit(1)
+                Spacer()
+            }
+            
             Card(content: { textField.padding(3) }, isEnabled: true)
             
             Spacer()
@@ -70,7 +78,6 @@ struct SpeechView: View {
             }
         }
         .onChange(of: scenePhase) { newValue in
-            print(newValue)
             if newValue == .inactive {
                 Task { try await recognition.cleanup() }
             }
@@ -79,10 +86,6 @@ struct SpeechView: View {
             }
         }
         .toolbar {
-//            ToolbarItem(placement: .navigationBarLeading) {
-//                ConnectionStateLabel(state: $recognition.state)
-//            }
-            
             ToolbarItem(placement: .navigationBarTrailing) {
                 OptionsButton(perform: openOptions)
             }

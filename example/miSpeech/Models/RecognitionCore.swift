@@ -9,6 +9,7 @@ class RecognitionCore: ObservableObject, TextContextChangedDelegate {
     @Published private(set) var error: String? = nil
     @Published private(set) var isRecording: Bool = false
     @Published private(set) var sessionId: UUID? = nil
+    @Published private(set) var preview: String = ""
     
     public var textField: UITextView?
     
@@ -18,7 +19,6 @@ class RecognitionCore: ObservableObject, TextContextChangedDelegate {
     func updateTextView(_ textView: UITextView) {
         self.textField = textView
     }
-    
     
     func textContextChanged(context: TextContext) {
         self.context = context
@@ -39,6 +39,12 @@ class RecognitionCore: ObservableObject, TextContextChangedDelegate {
     internal func onError(e: ErrorOccuredEventArgs) {
         DispatchQueue.main.async {
             self.error = e.message
+        }
+    }
+    
+    internal func onPreview(e: PreviewChangedEventArgs) {
+        DispatchQueue.main.async {
+            self.preview = e.text
         }
     }
     
@@ -64,6 +70,7 @@ class RecognitionCore: ObservableObject, TextContextChangedDelegate {
             
             self.recognition?.stateChanged.addHandler(handler: onStateChanged)
             self.recognition?.resultChanged.addHandler(handler: onResult)
+            self.recognition?.previewChanged.addHandler(handler: onPreview)
             self.recognition?.errorOccured.addHandler(handler: onError)
             self.recognition?.audioStateChanged.addHandler(handler: onAudioStateChanged)
         }
@@ -74,7 +81,7 @@ class RecognitionCore: ObservableObject, TextContextChangedDelegate {
     
     @MainActor
     public func initialize() async throws {
-        let recognitionContext = try MISpeech.createRecognitionContext(user: Configuration.singleton.user, vocabulary: Configuration.singleton.vocabulary, debug: true, language: Configuration.singleton.language)
+        let recognitionContext = try MISpeech.createRecognitionContext(user: Configuration.singleton.user, previewResults: true, debug: true, language: Configuration.singleton.language)
         
         do {
             try await self.recognition?.initializeAsync(recognitionContext)
