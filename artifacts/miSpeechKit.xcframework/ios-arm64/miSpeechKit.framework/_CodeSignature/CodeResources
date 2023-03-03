@@ -6,49 +6,40 @@
 	<dict>
 		<key>Headers/miSpeechKit-Swift.h</key>
 		<data>
-		NjDFfFruipIn/678ZjjTBxjFM+M=
+		aokVnxK46Pnn+D2p35/3/GKJAns=
 		</data>
 		<key>Headers/miSpeechKit.h</key>
 		<data>
-		ksJfAkGXp8Kf6lN+0+J++GXc4PI=
+		BO4pQjx2uBaOy+VbXrljBBt4CDs=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		cdIqR9mqCwtNelSCwO4qaHmrMdI=
+		DZnPshOo9gbRwhPIK4qfgZgII8o=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		d3NfCtKl5cjdswBpKM3nvf/QaV8=
+		zRGf+8m0cg0ZCKx/Du9DZXr+SDA=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		LQi6E2EMcQIAGBYeCAMKqE1vpmM=
+		iTFv+ekTey7ssNGP3bWVURuayuw=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		1arC3IITFI4Qd0XiJAwf/ZFDlYo=
+		2r8L9P6TRzlO8BX8HSiGvaY83s8=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		LQi6E2EMcQIAGBYeCAMKqE1vpmM=
+		iTFv+ekTey7ssNGP3bWVURuayuw=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		d6+69eg4ht6NYwxL5zdGm12ao/I=
+		YkYrrJtjEpxaiS5wsUmq2N0lpp0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
 		4XOd1iQO4r074v6d0xNClnssHIA=
 		</data>
-		<key>en.lproj/Resources.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7rFtd4LAxQ4jBNILLazJr04eJJM=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 	</dict>
 	<key>files2</key>
 	<dict>
@@ -56,49 +47,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			feWIJutxLbmpHhnvmpU84JGRfst3oezuAYzXlKbWIhI=
+			A5mqiBhe9EJMKDEj0blFt6UxSv20IbdlMgjcIDscoes=
 			</data>
 		</dict>
 		<key>Headers/miSpeechKit.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KcYMTf7Ys7zvDGPqquzzM2NAudK29JIVi1FwxL58184=
+			ESWvKoFmpzthr5c8Ttg9/lVe0hdU4NZPhOPtkFaYe0o=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			TQnlYSScui+OHgzAG+MjkJhq6rdPl30S8XEkGao/7R0=
+			jy/7dkaM9+y5VAB2xMV8d2+T5R3O7PWwwhF/md+Qu8w=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBRGiPLYgrTFZFvDABd7M0oJxPR1SItVMXV1cPUiGx0=
+			cL3WC45OycBWddWcjNlJa/Rs5hsOMlIsuQv7/5nkI7E=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H0kaI95yAXKcdnvzAducuOl3+eSZYphGQXYr/onnVVk=
+			p4ZATpnc76lEehkL/DpgDTeTsh2Lmx+9awNiAhYThhE=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IBRGiPLYgrTFZFvDABd7M0oJxPR1SItVMXV1cPUiGx0=
+			cL3WC45OycBWddWcjNlJa/Rs5hsOMlIsuQv7/5nkI7E=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yldI3pvpQjvM86sVoSim1IgHBkcjkn3i2zqYoGa2qPA=
+			UbyQvuhYcwbpBSM/IgYuAz328x/Q0mWuUvLg1wTTsN4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -107,15 +98,6 @@
 			<data>
 			+0IU5gv58j2yLALGZjb7gQzhjp1KuGj3Id760O8IMsU=
 			</data>
-		</dict>
-		<key>en.lproj/Resources.plist</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			v4tKlCZPmcoa099Tv96AKxpSjVDSgjNSfpKPBwO5y5o=
-			</data>
-			<key>optional</key>
-			<true/>
 		</dict>
 	</dict>
 	<key>rules</key>
