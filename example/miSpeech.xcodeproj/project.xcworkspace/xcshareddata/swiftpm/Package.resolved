@@ -8,15 +8,6 @@
         "branch" : "master",
         "revision" : "c1fde55798b164cad44b5e23cfa2f0f1ebcd76af"
       }
-    },
-    {
-      "identity" : "mispeechkit_4ios",
-      "kind" : "remoteSourceControl",
-      "location" : "https://github.com/mediainterface/mispeechkit_4ios",
-      "state" : {
-        "branch" : "v2-preview",
-        "revision" : "d9e30d9e83a53801e9a8cd42d1cf15c8eaf4b1c4"
-      }
     }
   ],
   "version" : 2

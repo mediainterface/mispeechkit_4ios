@@ -22,7 +22,8 @@
 		A7297D7A29ACA06500A71635 /* TextContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D7729ACA06500A71635 /* TextContext.swift */; };
 		A7297D8229ACA26A00A71635 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A7297D8129ACA26A00A71635 /* KeychainSwift */; };
 		A736CA0129AF582E0011D340 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A736CA0029AF582E0011D340 /* Card.swift */; };
-		A7415F4429B09FB1009EFF33 /* miSpeechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7415F4329B09FB1009EFF33 /* miSpeechKit */; };
+		A7A265A829B1EC6A00A54748 /* miSpeechKit.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7A265A729B1EC6A00A54748 /* miSpeechKit.xcframework */; };
+		A7A265A929B1EC6A00A54748 /* miSpeechKit.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A7A265A729B1EC6A00A54748 /* miSpeechKit.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A7CF2E3629ACD3C30002FF84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF2E3529ACD3C30002FF84 /* ContentView.swift */; };
 		A7E3A34129B0819300CC1A66 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A34029B0819300CC1A66 /* CircularButton.swift */; };
 		A7EF879E29AE3D2E00503021 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF879D29AE3D2E00503021 /* LoginForm.swift */; };
@@ -31,12 +32,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		A7A86A8629B09C6300C60266 /* Embed Frameworks */ = {
+		A7A265AA29B1EC6A00A54748 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A7A265A929B1EC6A00A54748 /* miSpeechKit.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -59,6 +61,7 @@
 		A7297D7629ACA06500A71635 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A7297D7729ACA06500A71635 /* TextContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextContext.swift; sourceTree = "<group>"; };
 		A736CA0029AF582E0011D340 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A7A265A729B1EC6A00A54748 /* miSpeechKit.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = miSpeechKit.xcframework; path = ../../Cloud/SDKs/miSpeechKit/bin/miSpeechKit.xcframework; sourceTree = "<group>"; };
 		A7CF2E3529ACD3C30002FF84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7E3A34029B0819300CC1A66 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		A7EF879D29AE3D2E00503021 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
@@ -71,8 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7A265A829B1EC6A00A54748 /* miSpeechKit.xcframework in Frameworks */,
 				A7297D8229ACA26A00A71635 /* KeychainSwift in Frameworks */,
-				A7415F4429B09FB1009EFF33 /* miSpeechKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +87,7 @@
 			children = (
 				A7297D4D29AC9EC100A71635 /* MISpeech */,
 				A7297D4C29AC9EC100A71635 /* Products */,
+				A7A2659D29B1E5C300A54748 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -153,6 +157,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		A7A2659D29B1E5C300A54748 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7A265A729B1EC6A00A54748 /* miSpeechKit.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -163,7 +175,7 @@
 				A7297D4729AC9EC100A71635 /* Sources */,
 				A7297D4829AC9EC100A71635 /* Frameworks */,
 				A7297D4929AC9EC100A71635 /* Resources */,
-				A7A86A8629B09C6300C60266 /* Embed Frameworks */,
+				A7A265AA29B1EC6A00A54748 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -172,7 +184,6 @@
 			name = miSpeech;
 			packageProductDependencies = (
 				A7297D8129ACA26A00A71635 /* KeychainSwift */,
-				A7415F4329B09FB1009EFF33 /* miSpeechKit */,
 			);
 			productName = MISpeech;
 			productReference = A7297D4B29AC9EC100A71635 /* miSpeech.app */;
@@ -204,7 +215,6 @@
 			mainGroup = A7297D4229AC9EC000A71635;
 			packageReferences = (
 				A7297D8029ACA26A00A71635 /* XCRemoteSwiftPackageReference "keychain-swift" */,
-				A7415F4229B09FB1009EFF33 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */,
 			);
 			productRefGroup = A7297D4C29AC9EC100A71635 /* Products */;
 			projectDirPath = "";
@@ -475,14 +485,6 @@
 				kind = branch;
 			};
 		};
-		A7415F4229B09FB1009EFF33 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/mediainterface/mispeechkit_4ios";
-			requirement = {
-				branch = "v2-preview";
-				kind = branch;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -490,11 +492,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A7297D8029ACA26A00A71635 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
-		};
-		A7415F4329B09FB1009EFF33 /* miSpeechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = A7415F4229B09FB1009EFF33 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */;
-			productName = miSpeechKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

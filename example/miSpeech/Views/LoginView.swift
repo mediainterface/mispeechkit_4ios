@@ -42,7 +42,7 @@ struct LoginView: View {
             Color("Background").ignoresSafeArea()
             
             VStack() {
-                NavigationLink(destination: SpeechView(), isActive: $isAuthenticated) { EmptyView() }
+                NavigationLink(destination: SpeechView().environmentObject(recognition), isActive: $isAuthenticated) { EmptyView() }
                 
                 Text("Anmeldung").font(.title)
                 
