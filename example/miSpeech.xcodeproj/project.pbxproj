@@ -22,7 +22,7 @@
 		A7297D7A29ACA06500A71635 /* TextContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D7729ACA06500A71635 /* TextContext.swift */; };
 		A7297D8229ACA26A00A71635 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A7297D8129ACA26A00A71635 /* KeychainSwift */; };
 		A736CA0129AF582E0011D340 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A736CA0029AF582E0011D340 /* Card.swift */; };
-		A7A265AD29B207F600A54748 /* miSpeechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7A265AC29B207F600A54748 /* miSpeechKit */; };
+		A7A265B029B20AE500A54748 /* miSpeechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7A265AF29B20AE500A54748 /* miSpeechKit */; };
 		A7CF2E3629ACD3C30002FF84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF2E3529ACD3C30002FF84 /* ContentView.swift */; };
 		A7E3A34129B0819300CC1A66 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A34029B0819300CC1A66 /* CircularButton.swift */; };
 		A7EF879E29AE3D2E00503021 /* LoginForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7EF879D29AE3D2E00503021 /* LoginForm.swift */; };
@@ -72,7 +72,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A7297D8229ACA26A00A71635 /* KeychainSwift in Frameworks */,
-				A7A265AD29B207F600A54748 /* miSpeechKit in Frameworks */,
+				A7A265B029B20AE500A54748 /* miSpeechKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,7 +180,7 @@
 			name = miSpeech;
 			packageProductDependencies = (
 				A7297D8129ACA26A00A71635 /* KeychainSwift */,
-				A7A265AC29B207F600A54748 /* miSpeechKit */,
+				A7A265AF29B20AE500A54748 /* miSpeechKit */,
 			);
 			productName = MISpeech;
 			productReference = A7297D4B29AC9EC100A71635 /* miSpeech.app */;
@@ -212,7 +212,7 @@
 			mainGroup = A7297D4229AC9EC000A71635;
 			packageReferences = (
 				A7297D8029ACA26A00A71635 /* XCRemoteSwiftPackageReference "keychain-swift" */,
-				A7A265AB29B207F600A54748 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */,
+				A7A265AE29B20AE500A54748 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */,
 			);
 			productRefGroup = A7297D4C29AC9EC100A71635 /* Products */;
 			projectDirPath = "";
@@ -483,7 +483,7 @@
 				kind = branch;
 			};
 		};
-		A7A265AB29B207F600A54748 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */ = {
+		A7A265AE29B20AE500A54748 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/mediainterface/mispeechkit_4ios";
 			requirement = {
@@ -499,9 +499,9 @@
 			package = A7297D8029ACA26A00A71635 /* XCRemoteSwiftPackageReference "keychain-swift" */;
 			productName = KeychainSwift;
 		};
-		A7A265AC29B207F600A54748 /* miSpeechKit */ = {
+		A7A265AF29B20AE500A54748 /* miSpeechKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A7A265AB29B207F600A54748 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */;
+			package = A7A265AE29B20AE500A54748 /* XCRemoteSwiftPackageReference "mispeechkit_4ios" */;
 			productName = miSpeechKit;
 		};
 /* End XCSwiftPackageProductDependency section */

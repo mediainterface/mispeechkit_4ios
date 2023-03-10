@@ -22,10 +22,10 @@ struct LoginForm: View {
                     Spacer()
                 }.padding(.bottom, 10)
                 
-                BorderedTextField("Nutzer", text: $user)
+                BorderedTextField("User", text: $user)
                     .focused($focusedField, equals: .user)
                 
-                BorderedTextField("Passwort", text: $password, isSecure: true)
+                BorderedTextField("Password", text: $password, isSecure: true)
                     .focused($focusedField, equals: .password)
             }
             .padding()

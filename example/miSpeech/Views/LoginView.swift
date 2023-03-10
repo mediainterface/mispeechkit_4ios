@@ -44,7 +44,7 @@ struct LoginView: View {
             VStack() {
                 NavigationLink(destination: SpeechView().environmentObject(recognition), isActive: $isAuthenticated) { EmptyView() }
                 
-                Text("Anmeldung").font(.title)
+                Text("Authentication").font(.title)
                 
                 LoginForm(user: $user, password: $password)
                 
@@ -52,7 +52,7 @@ struct LoginView: View {
                     Text(errorMessage).foregroundColor(Color("MIRed"))
                 }
                 
-                LoginButton(title: "Anmelden", perform: {
+                LoginButton(title: "Login", perform: {
                     Task { try await self.authenticate() }
                 }, isEnabled: !user.isEmpty && !password.isEmpty)
             }

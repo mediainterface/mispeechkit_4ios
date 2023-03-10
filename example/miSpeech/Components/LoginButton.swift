@@ -28,6 +28,6 @@ struct LoginButton: View {
 
 struct LoginButton_Previews: PreviewProvider {
     static var previews: some View {
-        LoginButton(title: "Anmelden", perform: {}, isEnabled: true)
+        LoginButton(title: "Login", perform: {}, isEnabled: true)
     }
 }

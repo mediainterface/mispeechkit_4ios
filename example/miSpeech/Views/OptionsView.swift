@@ -15,17 +15,17 @@ struct OptionsView: View {
         
         NavigationLink(destination: LoginView(), isActive: $isLoggedOut) { EmptyView() }
         Form {
-            Section("Sprache") {
-                Picker("Sprache auswählen", selection: $selectedLanguage) {
-                    Text("Deutsch").tag("de")
-                    Text("Französisch").tag("fr")
-                    Text("Englisch").tag("en")
+            Section("Language") {
+                Picker("Select a language", selection: $selectedLanguage) {
+                    Text("German").tag("de")
+                    Text("French").tag("fr")
+                    Text("English").tag("en")
                 }
             }
 
             Section(footer: HStack {
                 Spacer()
-                LoginButton(title: "Abmelden") {
+                LoginButton(title: "Logout") {
                     Configuration.singleton.logout()
                     isLoggedOut = true
                 }
@@ -37,9 +37,9 @@ struct OptionsView: View {
         .onAppear {
             selectedLanguage = config.language
         }
-        .navigationTitle("Einstellungen")
+        .navigationTitle("Settings")
         .toolbar {
-            Button("Speichern") {
+            Button("Save") {
                 config.language = selectedLanguage
                 config.save()
                 presentationMode.wrappedValue.dismiss()
