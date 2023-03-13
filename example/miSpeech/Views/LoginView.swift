@@ -52,6 +52,8 @@ struct LoginView: View {
                     Text(errorMessage).foregroundColor(Color("MIRed"))
                 }
                 
+                Text("Not registered yet? [Register here](https://landing.mediainterface.de/mira-testen)")
+                
                 LoginButton(title: "Login", perform: {
                     Task { try await self.authenticate() }
                 }, isEnabled: !user.isEmpty && !password.isEmpty)
