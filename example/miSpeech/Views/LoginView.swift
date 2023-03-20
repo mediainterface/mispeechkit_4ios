@@ -1,4 +1,5 @@
 import SwiftUI
+import WebKit
 
 struct LoginView: View {
     @State var user = ""
@@ -6,6 +7,7 @@ struct LoginView: View {
     @State var showPassword = false
     @State var isAuthenticated = false
     @State var errorMessage = ""
+    @State var isShowingWebView: Bool = false
     
     @StateObject var recognition = RecognitionCore()
     
@@ -52,7 +54,18 @@ struct LoginView: View {
                     Text(errorMessage).foregroundColor(Color("MIRed"))
                 }
                 
-                Text("Not registered yet? [Register here](https://landing.mediainterface.de/mira-testen)")
+                HStack {
+                    Text("Not registered yet?")
+                    Button {
+                        isShowingWebView.toggle()
+                    } label: {
+                        Text("Register here")
+                    }
+
+                }
+                .sheet(isPresented: $isShowingWebView, content: {
+                    WebView(url: URL(string: "https://landing.mediainterface.de/mira-testen")!)
+                })
                 
                 LoginButton(title: "Login", perform: {
                     Task { try await self.authenticate() }
