@@ -22,6 +22,7 @@
 		A7297D7A29ACA06500A71635 /* TextContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7297D7729ACA06500A71635 /* TextContext.swift */; };
 		A7297D8229ACA26A00A71635 /* KeychainSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A7297D8129ACA26A00A71635 /* KeychainSwift */; };
 		A736CA0129AF582E0011D340 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = A736CA0029AF582E0011D340 /* Card.swift */; };
+		A754F4E029C84F2700D79889 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A754F4DF29C84F2700D79889 /* WebView.swift */; };
 		A7A265B029B20AE500A54748 /* miSpeechKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7A265AF29B20AE500A54748 /* miSpeechKit */; };
 		A7CF2E3629ACD3C30002FF84 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CF2E3529ACD3C30002FF84 /* ContentView.swift */; };
 		A7E3A34129B0819300CC1A66 /* CircularButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7E3A34029B0819300CC1A66 /* CircularButton.swift */; };
@@ -59,6 +60,7 @@
 		A7297D7629ACA06500A71635 /* Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Configuration.swift; sourceTree = "<group>"; };
 		A7297D7729ACA06500A71635 /* TextContext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextContext.swift; sourceTree = "<group>"; };
 		A736CA0029AF582E0011D340 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		A754F4DF29C84F2700D79889 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WebView.swift; path = miSpeech/Components/WebView.swift; sourceTree = SOURCE_ROOT; };
 		A7CF2E3529ACD3C30002FF84 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A7E3A34029B0819300CC1A66 /* CircularButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularButton.swift; sourceTree = "<group>"; };
 		A7EF879D29AE3D2E00503021 /* LoginForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginForm.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				A7EF87A129AE50D600503021 /* LoginButton.swift */,
 				A736CA0029AF582E0011D340 /* Card.swift */,
 				A7E3A34029B0819300CC1A66 /* CircularButton.swift */,
+				A754F4DF29C84F2700D79889 /* WebView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 				A7297D7329ACA00600A71635 /* OptionsButton.swift in Sources */,
 				A7297D7A29ACA06500A71635 /* TextContext.swift in Sources */,
 				A7EF87A229AE50D600503021 /* LoginButton.swift in Sources */,
+				A754F4E029C84F2700D79889 /* WebView.swift in Sources */,
 				A7297D7229ACA00600A71635 /* CustomTextField.swift in Sources */,
 				A7E3A34129B0819300CC1A66 /* CircularButton.swift in Sources */,
 			);
