@@ -1,7 +1,7 @@
 framework module miSpeechKit {
   umbrella header "miSpeechKit.h"
-
   export *
+
   module * { export * }
 }
 

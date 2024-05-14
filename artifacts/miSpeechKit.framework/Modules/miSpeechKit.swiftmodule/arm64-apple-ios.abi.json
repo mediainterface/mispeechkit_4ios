@@ -1412,7 +1412,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "IRecognitionContext",
-                "printedName": "miSpeechKit.IRecognitionContext",
+                "printedName": "any miSpeechKit.IRecognitionContext",
                 "usr": "s:11miSpeechKit19IRecognitionContextP"
               }
             ],
@@ -1474,7 +1474,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "IWordInfo",
-                "printedName": "miSpeechKit.IWordInfo",
+                "printedName": "any miSpeechKit.IWordInfo",
                 "usr": "s:11miSpeechKit9IWordInfoP"
               }
             ],
@@ -1544,12 +1544,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[miSpeechKit.IWordInfo]",
+                "printedName": "[any miSpeechKit.IWordInfo]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "IWordInfo",
-                    "printedName": "miSpeechKit.IWordInfo",
+                    "printedName": "any miSpeechKit.IWordInfo",
                     "usr": "s:11miSpeechKit9IWordInfoP"
                   }
                 ],
@@ -2130,12 +2130,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[miSpeechKit.IRecognitionResultInfo]",
+                "printedName": "[any miSpeechKit.IRecognitionResultInfo]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "IRecognitionResultInfo",
-                    "printedName": "miSpeechKit.IRecognitionResultInfo",
+                    "printedName": "any miSpeechKit.IRecognitionResultInfo",
                     "usr": "s:11miSpeechKit22IRecognitionResultInfoP"
                   }
                 ],
@@ -2162,12 +2162,12 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[miSpeechKit.IRecognitionResultInfo]",
+                    "printedName": "[any miSpeechKit.IRecognitionResultInfo]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "IRecognitionResultInfo",
-                        "printedName": "miSpeechKit.IRecognitionResultInfo",
+                        "printedName": "any miSpeechKit.IRecognitionResultInfo",
                         "usr": "s:11miSpeechKit22IRecognitionResultInfoP"
                       }
                     ],
@@ -2573,12 +2573,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(miSpeechKit.MISpeechError.Type) -> (Swift.Error) -> miSpeechKit.MISpeechError",
+                "printedName": "(miSpeechKit.MISpeechError.Type) -> (any Swift.Error) -> miSpeechKit.MISpeechError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.Error) -> miSpeechKit.MISpeechError",
+                    "printedName": "(any Swift.Error) -> miSpeechKit.MISpeechError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2589,7 +2589,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Error",
-                        "printedName": "Swift.Error",
+                        "printedName": "any Swift.Error",
                         "usr": "s:s5ErrorP"
                       }
                     ]
@@ -2989,7 +2989,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "IAuthenticationContext",
-                "printedName": "miSpeechKit.IAuthenticationContext",
+                "printedName": "any miSpeechKit.IAuthenticationContext",
                 "usr": "s:11miSpeechKit22IAuthenticationContextP"
               },
               {
@@ -3049,7 +3049,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "IRecognitionContext",
-                "printedName": "miSpeechKit.IRecognitionContext",
+                "printedName": "any miSpeechKit.IRecognitionContext",
                 "usr": "s:11miSpeechKit19IRecognitionContextP"
               },
               {
@@ -3146,7 +3146,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "IRecognition",
-                "printedName": "miSpeechKit.IRecognition",
+                "printedName": "any miSpeechKit.IRecognition",
                 "usr": "s:11miSpeechKit12IRecognitionP"
               },
               {
@@ -3167,12 +3167,12 @@
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "miSpeechKit.IAuthenticationContext?",
+                "printedName": "(any miSpeechKit.IAuthenticationContext)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "IAuthenticationContext",
-                    "printedName": "miSpeechKit.IAuthenticationContext",
+                    "printedName": "any miSpeechKit.IAuthenticationContext",
                     "usr": "s:11miSpeechKit22IAuthenticationContextP"
                   }
                 ],

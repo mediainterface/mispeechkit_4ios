@@ -54,22 +54,8 @@ struct LoginView: View {
                     Text(errorMessage).foregroundColor(Color("MIRed"))
                 }
                 
-                HStack {
-                    Text("Not registered yet?")
-                    Button {
-                        isShowingWebView.toggle()
-                    } label: {
-                        Text("Register here")
-                    }
-
-                }
-                .sheet(isPresented: $isShowingWebView, content: {
-                    WebView(url: URL(string: "https://landing.mediainterface.de/mira-testen")!)
-                })
-                
-                LoginButton(title: "Login", perform: {
-                    Task { try await self.authenticate() }
-                }, isEnabled: !user.isEmpty && !password.isEmpty)
+                Text("No MIRA account yet? Register on our website or contact our service for a test account.")
+                .padding()
             }
         }
         .onAppear(perform: load)
