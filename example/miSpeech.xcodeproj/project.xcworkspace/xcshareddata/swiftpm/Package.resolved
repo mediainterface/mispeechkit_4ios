@@ -1,4 +1,5 @@
 {
+  "originHash" : "a21490a5548878659fd62e112daa0c3f05c477e03a8f9b900d4960ed9fbb1b45",
   "pins" : [
     {
       "identity" : "keychain-swift",
@@ -14,10 +15,10 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/mediainterface/mispeechkit_4ios",
       "state" : {
-        "revision" : "fe37e4dbf61f2cdbd1f646af3849ecdd56914843",
-        "version" : "2.0.0"
+        "revision" : "091f295d2fa8f97e660c2c0c70c039b78319c381",
+        "version" : "2.0.1"
       }
     }
   ],
-  "version" : 2
+  "version" : 3
 }
