@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/miSpeechKit-Swift.h</key>
 		<data>
-		McBjNitFrOcPR8a/E78d7hA6OtU=
+		VR3duFJwUk662aheg1xIAUzmFsE=
 		</data>
 		<key>Headers/miSpeechKit.h</key>
 		<data>
@@ -14,47 +14,47 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UKvpN5G+j6/VoTdLL9WhqEHrWN0=
+		S5SVHYuFt+ONwZXRIUYaOEt2iiE=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		kumHYjMBbwFUqn2D3FtqdzRro/s=
+		uFY/DKQbw4uqh2aZZblIqUAA8pk=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		WnLPT5sKxQXRxrdDYHypehkZD3E=
+		Ju4ESVZOObOcxkthVdBhxWdm4Dk=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		AD585BPg6AChrW3csk8LBJ17gzc=
+		24RMCNbrfZY894v9qNSHtx9j42E=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		WnLPT5sKxQXRxrdDYHypehkZD3E=
+		Ju4ESVZOObOcxkthVdBhxWdm4Dk=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		gDExVzEFTzIGUJF2Bt5Z355FYOU=
+		m11ir2x5hOyCc4Hc0O+k/L7Jew0=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		kumHYjMBbwFUqn2D3FtqdzRro/s=
+		uFY/DKQbw4uqh2aZZblIqUAA8pk=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		mVgHUA3T0izEi6wDJhXR4no+b30=
+		fXgsNe2d129brP6SsfKXoogsgZE=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		S2WPdOX1NRYe5lux1mP2Zn8f1wg=
+		1plbBljsisFd4yevIOPa511xZm8=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		mVgHUA3T0izEi6wDJhXR4no+b30=
+		fXgsNe2d129brP6SsfKXoogsgZE=
 		</data>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		VOxnJmlHA1taPoNeDviZdbOJmDs=
+		aMU1rUOIAKjK3rbGQF4qPvLzRRE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c5iCn52CNcVkgGLaZFUlwSP1zAp9P4h69yx6m/036Ow=
+			AnVwcIoQIQCHg3ti7y4RxDLQSsXUnthaRrEB5YxVQ9E=
 			</data>
 		</dict>
 		<key>Headers/miSpeechKit.h</key>
@@ -81,70 +81,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VeyV5qF1I3Eb7inJVN47pxGv0/EkGwp7yCGAPRO4GUs=
+			GnKnM2Bxn3edeolWmXIjMO5wReZC85xynhNfZ/1Yl6I=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tzC8p5Agfx2R7s0V9J+DkLBQ9IlqUINBbzI5fEXK50k=
+			5xCufBTW9JRjNAVd9y+3emMfCaBAkrz4kYjSSGd8SpE=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7pZCWmrZwwgWrA9lVZemD//Tr/PABW38B1k8GwHn/IE=
+			V21V5TnKBo0I/N1qEj8u5kJT2MZtRkL9Iu9S4owXq3k=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tzC8p5Agfx2R7s0V9J+DkLBQ9IlqUINBbzI5fEXK50k=
+			5xCufBTW9JRjNAVd9y+3emMfCaBAkrz4kYjSSGd8SpE=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rEAsQU4t9Y8R0+Td02oVPzcCV8auybgCnsKP4hjSun0=
+			eXVMdGDGNSC4Sg5S+Xx216kPtIn+x/krifk+6w7wzes=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VeyV5qF1I3Eb7inJVN47pxGv0/EkGwp7yCGAPRO4GUs=
+			GnKnM2Bxn3edeolWmXIjMO5wReZC85xynhNfZ/1Yl6I=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YGqGrBuZTV+y78yZagBxcbnIJ738MN5ICyfI1EVvJ+s=
+			f1Z2URZvY1pC1WxqfodnvphXV4Kbqtu9X4oJXMZzeZw=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j6CWd/n4KKTWzFtNhesQw736hH2bdjw06Mh/+IQUjv4=
+			jjg+Jmy1WfUUQYrOGAMGhTeIuIPe1vu8HxErR7b+PhE=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YGqGrBuZTV+y78yZagBxcbnIJ738MN5ICyfI1EVvJ+s=
+			f1Z2URZvY1pC1WxqfodnvphXV4Kbqtu9X4oJXMZzeZw=
 			</data>
 		</dict>
 		<key>Modules/miSpeechKit.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kbh6FwUZWJ8E0Fc2Oe0mKSMVF26JOQgLTxjftwph2WE=
+			MQqWaGLnSgX0K+EDqN4k7Sgvdo+mfY50YNHYYFjJB0Q=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

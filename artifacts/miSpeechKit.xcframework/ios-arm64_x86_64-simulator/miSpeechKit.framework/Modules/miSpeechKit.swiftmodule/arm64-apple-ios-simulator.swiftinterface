@@ -1,6 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
-// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name miSpeechKit
+// swift-compiler-version: Apple Swift version 6.1 effective-5.10 (swiftlang-6.1.0.110.21 clang-1700.0.13.3)
+// swift-module-flags: -target arm64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name miSpeechKit
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1
 import AVFoundation
 import AudioUnit
 import Foundation
@@ -48,6 +49,16 @@ import _SwiftConcurrencyShims
   }
   @objc deinit
 }
+public enum ServerType : Swift.String, Swift.Codable {
+  case cloud
+  case onPremise
+  case speaking
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
 public protocol IRecognition {
   var state: miSpeechKit.SessionState { get }
   var errorOccured: miSpeechKit.Event<miSpeechKit.ErrorOccuredEventArgs> { get }
@@ -56,33 +67,15 @@ public protocol IRecognition {
   var stateChanged: miSpeechKit.Event<miSpeechKit.StateChangedEventArgs> { get }
   var audioStateChanged: miSpeechKit.Event<miSpeechKit.AudioStateChangedEventArgs> { get }
   var voiceLevelChanged: miSpeechKit.Event<miSpeechKit.VoiceLevelChangedEventArgs> { get }
-  #if compiler(>=5.3) && $AsyncAwait
   func initializeAsync(_ context: any miSpeechKit.IRecognitionContext) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func addWordAsync(_ word: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func addWordAsync(_ word: any miSpeechKit.IWordInfo) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func addWordsAsync(_ words: [Swift.String]) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func addWordsAsync(_ words: [any miSpeechKit.IWordInfo]) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func startAsync(previousText: Swift.String?, followingText: Swift.String?) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
   func stopAsync() async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
-  func submitTextAsync(_ text: Swift.String) async throws
-  #endif
-  #if compiler(>=5.3) && $AsyncAwait
+  func submitTextAsync(_ text: Swift.String, _ language: miSpeechKit.LanguageId) async throws
   func cleanupAsync() async throws
-  #endif
 }
 public enum AudioFormat : Swift.Int {
   case Default
@@ -119,15 +112,13 @@ public enum MISpeechError : Swift.Error {
   case connectionTimeout
   case emptyUrl
   case invalidUrl(Swift.String)
-  case http(Swift.String)
-  case http(Swift.String, Swift.Int)
+  case http(Swift.String, Swift.Int, Swift.String, Foundation.UUID?)
+  case notSupported(feature: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class MISpeech {
   public static func createAuthenticationContext(user: Swift.String, password: Swift.String? = nil, system: Swift.String? = nil) throws -> any miSpeechKit.IAuthenticationContext
   public static func createRecognitionContext(user: Swift.String, vocabulary: Swift.String? = nil, previewResults: Swift.Bool? = nil, debug: Swift.Bool? = nil, language: Swift.String? = nil, audioFormat: miSpeechKit.AudioFormat = AudioFormat.Default) throws -> any miSpeechKit.IRecognitionContext
-  #if compiler(>=5.3) && $AsyncAwait
-  public static func createRecognitionAsync(server: Swift.String? = nil, context: (any miSpeechKit.IAuthenticationContext)? = nil) async throws -> any miSpeechKit.IRecognition
-  #endif
+  public static func createRecognitionAsync(server: Swift.String? = nil, context: any miSpeechKit.IAuthenticationContext) async throws -> any miSpeechKit.IRecognition
   @objc deinit
 }
 public protocol IRecognitionContext {
@@ -140,7 +131,7 @@ public protocol IRecognitionContext {
 }
 public protocol IAuthenticationContext {
   var system: Swift.String? { get }
-  var user: Swift.String? { get }
+  var user: Swift.String { get }
   var password: Swift.String? { get }
 }
 public protocol IWordInfo {
@@ -172,6 +163,17 @@ public protocol IRecognitionResultInfo {
   var textBlock: Swift.String? { get }
   var word: Swift.String? { get }
 }
+public enum LanguageId : Swift.Int, Swift.Codable {
+  case De
+  case En
+  case Fr
+  case Ch
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class Event<T> {
   public typealias EventHandler = (T) -> ()
   public func addHandler(handler: @escaping miSpeechKit.Event<T>.EventHandler)
@@ -193,9 +195,15 @@ public enum RecognitionResultAttribute : Swift.Int, Swift.Decodable {
 }
 extension miSpeechKit.SessionState : Swift.Equatable {}
 extension miSpeechKit.SessionState : Swift.Hashable {}
+extension miSpeechKit.ServerType : Swift.Equatable {}
+extension miSpeechKit.ServerType : Swift.Hashable {}
+extension miSpeechKit.ServerType : Swift.RawRepresentable {}
 extension miSpeechKit.AudioFormat : Swift.Equatable {}
 extension miSpeechKit.AudioFormat : Swift.Hashable {}
 extension miSpeechKit.AudioFormat : Swift.RawRepresentable {}
+extension miSpeechKit.LanguageId : Swift.Equatable {}
+extension miSpeechKit.LanguageId : Swift.Hashable {}
+extension miSpeechKit.LanguageId : Swift.RawRepresentable {}
 extension miSpeechKit.RecognitionResultAttribute : Swift.Equatable {}
 extension miSpeechKit.RecognitionResultAttribute : Swift.Hashable {}
 extension miSpeechKit.RecognitionResultAttribute : Swift.RawRepresentable {}
