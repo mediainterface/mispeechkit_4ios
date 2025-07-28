@@ -1,8 +1,8 @@
 {
   "ABIRoot": {
     "kind": "Root",
-    "name": "TopLevel",
-    "printedName": "TopLevel",
+    "name": "miSpeechKit",
+    "printedName": "miSpeechKit",
     "children": [
       {
         "kind": "Import",
@@ -152,7 +152,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -253,7 +269,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -809,6 +841,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -941,7 +987,288 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ServerType",
+        "printedName": "ServerType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "cloud",
+            "printedName": "cloud",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(miSpeechKit.ServerType.Type) -> miSpeechKit.ServerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServerType",
+                    "printedName": "miSpeechKit.ServerType",
+                    "usr": "s:11miSpeechKit10ServerTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "miSpeechKit.ServerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServerType",
+                        "printedName": "miSpeechKit.ServerType",
+                        "usr": "s:11miSpeechKit10ServerTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11miSpeechKit10ServerTypeO5cloudyA2CmF",
+            "mangledName": "$s11miSpeechKit10ServerTypeO5cloudyA2CmF",
+            "moduleName": "miSpeechKit"
+          },
+          {
+            "kind": "Var",
+            "name": "onPremise",
+            "printedName": "onPremise",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(miSpeechKit.ServerType.Type) -> miSpeechKit.ServerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServerType",
+                    "printedName": "miSpeechKit.ServerType",
+                    "usr": "s:11miSpeechKit10ServerTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "miSpeechKit.ServerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServerType",
+                        "printedName": "miSpeechKit.ServerType",
+                        "usr": "s:11miSpeechKit10ServerTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11miSpeechKit10ServerTypeO9onPremiseyA2CmF",
+            "mangledName": "$s11miSpeechKit10ServerTypeO9onPremiseyA2CmF",
+            "moduleName": "miSpeechKit"
+          },
+          {
+            "kind": "Var",
+            "name": "speaking",
+            "printedName": "speaking",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(miSpeechKit.ServerType.Type) -> miSpeechKit.ServerType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServerType",
+                    "printedName": "miSpeechKit.ServerType",
+                    "usr": "s:11miSpeechKit10ServerTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "miSpeechKit.ServerType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ServerType",
+                        "printedName": "miSpeechKit.ServerType",
+                        "usr": "s:11miSpeechKit10ServerTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11miSpeechKit10ServerTypeO8speakingyA2CmF",
+            "mangledName": "$s11miSpeechKit10ServerTypeO8speakingyA2CmF",
+            "moduleName": "miSpeechKit"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "miSpeechKit.ServerType?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ServerType",
+                    "printedName": "miSpeechKit.ServerType",
+                    "usr": "s:11miSpeechKit10ServerTypeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11miSpeechKit10ServerTypeO8rawValueACSgSS_tcfc",
+            "mangledName": "$s11miSpeechKit10ServerTypeO8rawValueACSgSS_tcfc",
+            "moduleName": "miSpeechKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11miSpeechKit10ServerTypeO8rawValueSSvp",
+            "mangledName": "$s11miSpeechKit10ServerTypeO8rawValueSSvp",
+            "moduleName": "miSpeechKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11miSpeechKit10ServerTypeO8rawValueSSvg",
+                "mangledName": "$s11miSpeechKit10ServerTypeO8rawValueSSvg",
+                "moduleName": "miSpeechKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11miSpeechKit10ServerTypeO",
+        "mangledName": "$s11miSpeechKit10ServerTypeO",
+        "moduleName": "miSpeechKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -1651,7 +1978,7 @@
           {
             "kind": "Function",
             "name": "submitTextAsync",
-            "printedName": "submitTextAsync(_:)",
+            "printedName": "submitTextAsync(_:_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -1663,11 +1990,17 @@
                 "name": "String",
                 "printedName": "Swift.String",
                 "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "LanguageId",
+                "printedName": "miSpeechKit.LanguageId",
+                "usr": "s:11miSpeechKit10LanguageIdO"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11miSpeechKit12IRecognitionP15submitTextAsyncyySSYaKF",
-            "mangledName": "$s11miSpeechKit12IRecognitionP15submitTextAsyncyySSYaKF",
+            "usr": "s:11miSpeechKit12IRecognitionP15submitTextAsyncyySS_AA10LanguageIdOtYaKF",
+            "mangledName": "$s11miSpeechKit12IRecognitionP15submitTextAsyncyySS_AA10LanguageIdOtYaKF",
             "moduleName": "miSpeechKit",
             "genericSig": "<τ_0_0 where τ_0_0 : miSpeechKit.IRecognition>",
             "sugared_genericSig": "<Self where Self : miSpeechKit.IRecognition>",
@@ -1712,6 +2045,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -1964,6 +2313,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -2192,7 +2555,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -2759,65 +3138,12 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(miSpeechKit.MISpeechError.Type) -> (Swift.String) -> miSpeechKit.MISpeechError",
+                "printedName": "(miSpeechKit.MISpeechError.Type) -> (Swift.String, Swift.Int, Swift.String, Foundation.UUID?) -> miSpeechKit.MISpeechError",
                 "children": [
                   {
                     "kind": "TypeFunc",
                     "name": "Function",
-                    "printedName": "(Swift.String) -> miSpeechKit.MISpeechError",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MISpeechError",
-                        "printedName": "miSpeechKit.MISpeechError",
-                        "usr": "s:11miSpeechKit13MISpeechErrorO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ]
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "miSpeechKit.MISpeechError.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "MISpeechError",
-                        "printedName": "miSpeechKit.MISpeechError",
-                        "usr": "s:11miSpeechKit13MISpeechErrorO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:11miSpeechKit13MISpeechErrorO4httpyACSScACmF",
-            "mangledName": "$s11miSpeechKit13MISpeechErrorO4httpyACSScACmF",
-            "moduleName": "miSpeechKit",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "http",
-            "printedName": "http",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(miSpeechKit.MISpeechError.Type) -> (Swift.String, Swift.Int) -> miSpeechKit.MISpeechError",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String, Swift.Int) -> miSpeechKit.MISpeechError",
+                    "printedName": "(Swift.String, Swift.Int, Swift.String, Foundation.UUID?) -> miSpeechKit.MISpeechError",
                     "children": [
                       {
                         "kind": "TypeNominal",
@@ -2828,7 +3154,7 @@
                       {
                         "kind": "TypeNominal",
                         "name": "Tuple",
-                        "printedName": "(Swift.String, Swift.Int)",
+                        "printedName": "(Swift.String, Swift.Int, Swift.String, Foundation.UUID?)",
                         "children": [
                           {
                             "kind": "TypeNominal",
@@ -2841,6 +3167,26 @@
                             "name": "Int",
                             "printedName": "Swift.Int",
                             "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Foundation.UUID?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "UUID",
+                                "printedName": "Foundation.UUID",
+                                "usr": "s:10Foundation4UUIDV"
+                              }
+                            ],
+                            "usr": "s:Sq"
                           }
                         ]
                       }
@@ -2863,12 +3209,69 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:11miSpeechKit13MISpeechErrorO4httpyACSS_SitcACmF",
-            "mangledName": "$s11miSpeechKit13MISpeechErrorO4httpyACSS_SitcACmF",
+            "usr": "s:11miSpeechKit13MISpeechErrorO4httpyACSS_SiSS10Foundation4UUIDVSgtcACmF",
+            "mangledName": "$s11miSpeechKit13MISpeechErrorO4httpyACSS_SiSS10Foundation4UUIDVSgtcACmF",
             "moduleName": "miSpeechKit",
             "declAttributes": [
               "RawDocComment"
             ]
+          },
+          {
+            "kind": "Var",
+            "name": "notSupported",
+            "printedName": "notSupported",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(miSpeechKit.MISpeechError.Type) -> (Swift.String) -> miSpeechKit.MISpeechError",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> miSpeechKit.MISpeechError",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MISpeechError",
+                        "printedName": "miSpeechKit.MISpeechError",
+                        "usr": "s:11miSpeechKit13MISpeechErrorO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(feature: Swift.String)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "miSpeechKit.MISpeechError.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "MISpeechError",
+                        "printedName": "miSpeechKit.MISpeechError",
+                        "usr": "s:11miSpeechKit13MISpeechErrorO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11miSpeechKit13MISpeechErrorO12notSupportedyACSS_tcACmF",
+            "mangledName": "$s11miSpeechKit13MISpeechErrorO12notSupportedyACSS_tcACmF",
+            "moduleName": "miSpeechKit"
           }
         ],
         "declKind": "Enum",
@@ -2880,6 +3283,20 @@
           "RawDocComment"
         ],
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
           {
             "kind": "Conformance",
             "name": "Error",
@@ -3166,23 +3583,14 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any miSpeechKit.IAuthenticationContext)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "IAuthenticationContext",
-                    "printedName": "any miSpeechKit.IAuthenticationContext",
-                    "usr": "s:11miSpeechKit22IAuthenticationContextP"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
+                "name": "IAuthenticationContext",
+                "printedName": "any miSpeechKit.IAuthenticationContext",
+                "usr": "s:11miSpeechKit22IAuthenticationContextP"
               }
             ],
             "declKind": "Func",
-            "usr": "s:11miSpeechKit8MISpeechC22createRecognitionAsync6server7contextAA12IRecognition_pSSSg_AA22IAuthenticationContext_pSgtYaKFZ",
-            "mangledName": "$s11miSpeechKit8MISpeechC22createRecognitionAsync6server7contextAA12IRecognition_pSSSg_AA22IAuthenticationContext_pSgtYaKFZ",
+            "usr": "s:11miSpeechKit8MISpeechC22createRecognitionAsync6server7contextAA12IRecognition_pSSSg_AA22IAuthenticationContext_ptYaKFZ",
+            "mangledName": "$s11miSpeechKit8MISpeechC22createRecognitionAsync6server7contextAA12IRecognition_pSSSg_AA22IAuthenticationContext_ptYaKFZ",
             "moduleName": "miSpeechKit",
             "static": true,
             "declAttributes": [
@@ -3200,7 +3608,23 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -3599,6 +4023,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3721,22 +4161,14 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
               }
             ],
             "declKind": "Var",
-            "usr": "s:11miSpeechKit22IAuthenticationContextP4userSSSgvp",
-            "mangledName": "$s11miSpeechKit22IAuthenticationContextP4userSSSgvp",
+            "usr": "s:11miSpeechKit22IAuthenticationContextP4userSSvp",
+            "mangledName": "$s11miSpeechKit22IAuthenticationContextP4userSSvp",
             "moduleName": "miSpeechKit",
             "protocolReq": true,
             "declAttributes": [
@@ -3750,22 +4182,14 @@
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:11miSpeechKit22IAuthenticationContextP4userSSSgvg",
-                "mangledName": "$s11miSpeechKit22IAuthenticationContextP4userSSSgvg",
+                "usr": "s:11miSpeechKit22IAuthenticationContextP4userSSvg",
+                "mangledName": "$s11miSpeechKit22IAuthenticationContextP4userSSvg",
                 "moduleName": "miSpeechKit",
                 "genericSig": "<τ_0_0 where τ_0_0 : miSpeechKit.IAuthenticationContext>",
                 "sugared_genericSig": "<Self where Self : miSpeechKit.IAuthenticationContext>",
@@ -3844,6 +4268,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -3862,16 +4302,6 @@
         "printedName": "Network",
         "declKind": "Import",
         "moduleName": "miSpeechKit"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "miSpeechKit",
-        "declAttributes": [
-          "RawDocComment"
-        ]
       },
       {
         "kind": "Import",
@@ -4145,6 +4575,32 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "miSpeechKit",
+        "declAttributes": [
+          "RawDocComment"
         ]
       },
       {
@@ -4171,6 +4627,26 @@
         "kind": "Import",
         "name": "Network",
         "printedName": "Network",
+        "declKind": "Import",
+        "moduleName": "miSpeechKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "miSpeechKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
         "declKind": "Import",
         "moduleName": "miSpeechKit",
         "declAttributes": [
@@ -4318,7 +4794,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -4481,7 +4973,23 @@
           "AccessControl",
           "RawDocComment"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       },
       {
         "kind": "Import",
@@ -4763,6 +5271,22 @@
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
         ]
       },
       {
@@ -4773,6 +5297,308 @@
         "moduleName": "miSpeechKit",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "LanguageId",
+        "printedName": "LanguageId",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "De",
+            "printedName": "De",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(miSpeechKit.LanguageId.Type) -> miSpeechKit.LanguageId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LanguageId",
+                    "printedName": "miSpeechKit.LanguageId",
+                    "usr": "s:11miSpeechKit10LanguageIdO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "miSpeechKit.LanguageId.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LanguageId",
+                        "printedName": "miSpeechKit.LanguageId",
+                        "usr": "s:11miSpeechKit10LanguageIdO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11miSpeechKit10LanguageIdO2DeyA2CmF",
+            "mangledName": "$s11miSpeechKit10LanguageIdO2DeyA2CmF",
+            "moduleName": "miSpeechKit"
+          },
+          {
+            "kind": "Var",
+            "name": "En",
+            "printedName": "En",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(miSpeechKit.LanguageId.Type) -> miSpeechKit.LanguageId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LanguageId",
+                    "printedName": "miSpeechKit.LanguageId",
+                    "usr": "s:11miSpeechKit10LanguageIdO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "miSpeechKit.LanguageId.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LanguageId",
+                        "printedName": "miSpeechKit.LanguageId",
+                        "usr": "s:11miSpeechKit10LanguageIdO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11miSpeechKit10LanguageIdO2EnyA2CmF",
+            "mangledName": "$s11miSpeechKit10LanguageIdO2EnyA2CmF",
+            "moduleName": "miSpeechKit"
+          },
+          {
+            "kind": "Var",
+            "name": "Fr",
+            "printedName": "Fr",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(miSpeechKit.LanguageId.Type) -> miSpeechKit.LanguageId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LanguageId",
+                    "printedName": "miSpeechKit.LanguageId",
+                    "usr": "s:11miSpeechKit10LanguageIdO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "miSpeechKit.LanguageId.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LanguageId",
+                        "printedName": "miSpeechKit.LanguageId",
+                        "usr": "s:11miSpeechKit10LanguageIdO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11miSpeechKit10LanguageIdO2FryA2CmF",
+            "mangledName": "$s11miSpeechKit10LanguageIdO2FryA2CmF",
+            "moduleName": "miSpeechKit"
+          },
+          {
+            "kind": "Var",
+            "name": "Ch",
+            "printedName": "Ch",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(miSpeechKit.LanguageId.Type) -> miSpeechKit.LanguageId",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LanguageId",
+                    "printedName": "miSpeechKit.LanguageId",
+                    "usr": "s:11miSpeechKit10LanguageIdO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "miSpeechKit.LanguageId.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "LanguageId",
+                        "printedName": "miSpeechKit.LanguageId",
+                        "usr": "s:11miSpeechKit10LanguageIdO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11miSpeechKit10LanguageIdO2ChyA2CmF",
+            "mangledName": "$s11miSpeechKit10LanguageIdO2ChyA2CmF",
+            "moduleName": "miSpeechKit"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "miSpeechKit.LanguageId?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "LanguageId",
+                    "printedName": "miSpeechKit.LanguageId",
+                    "usr": "s:11miSpeechKit10LanguageIdO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:11miSpeechKit10LanguageIdO8rawValueACSgSi_tcfc",
+            "mangledName": "$s11miSpeechKit10LanguageIdO8rawValueACSgSi_tcfc",
+            "moduleName": "miSpeechKit",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11miSpeechKit10LanguageIdO8rawValueSivp",
+            "mangledName": "$s11miSpeechKit10LanguageIdO8rawValueSivp",
+            "moduleName": "miSpeechKit",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11miSpeechKit10LanguageIdO8rawValueSivg",
+                "mangledName": "$s11miSpeechKit10LanguageIdO8rawValueSivg",
+                "moduleName": "miSpeechKit",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11miSpeechKit10LanguageIdO",
+        "mangledName": "$s11miSpeechKit10LanguageIdO",
+        "moduleName": "miSpeechKit",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
         ]
       },
       {
@@ -4889,7 +5715,33 @@
         "declAttributes": [
           "AccessControl"
         ],
-        "hasMissingDesignatedInitializers": true
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "miSpeechKit",
+        "declAttributes": [
+          "RawDocComment"
+        ]
       },
       {
         "kind": "Import",
@@ -5349,6 +6201,20 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Equatable",
             "printedName": "Equatable",
             "usr": "s:SQ",
@@ -5407,20 +6273,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/StopRecognitionMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 133,
-      "length": 22,
-      "value": "\"miSpeechKit.StopRecognitionMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/StopRecognitionMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 133,
-      "length": 22,
-      "value": "\"miSpeechKit.StopRecognitionMessage\""
-    },
-    {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/ResponseMessageAction.swift",
       "kind": "StringLiteral",
       "offset": 187,
@@ -5451,23 +6303,9 @@
     {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/RecognitionCore.swift",
       "kind": "IntegerLiteral",
-      "offset": 232,
+      "offset": 237,
       "length": 5,
       "value": "60000"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/RequestStateMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 130,
-      "length": 19,
-      "value": "\"miSpeechKit.RequestStateMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/RequestStateMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 130,
-      "length": 19,
-      "value": "\"miSpeechKit.RequestStateMessage\""
     },
     {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/SessionState.swift",
@@ -5596,32 +6434,25 @@
       "value": "\"requestState\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/InitializeMessage.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/ServerType.swift",
       "kind": "StringLiteral",
-      "offset": 128,
+      "offset": 146,
+      "length": 12,
+      "value": "\"MIRA_CLOUD\""
+    },
+    {
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/ServerType.swift",
+      "kind": "StringLiteral",
+      "offset": 180,
       "length": 17,
-      "value": "\"miSpeechKit.InitializeMessage\""
+      "value": "\"MIRA_ON_PREMISE\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/InitializeMessage.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/ServerType.swift",
       "kind": "StringLiteral",
-      "offset": 128,
-      "length": 17,
-      "value": "\"miSpeechKit.InitializeMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/RecognitionPreviewResultMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 142,
-      "length": 31,
-      "value": "\"miSpeechKit.RecognitionPreviewResultMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/RecognitionPreviewResultMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 142,
-      "length": 31,
-      "value": "\"miSpeechKit.RecognitionPreviewResultMessage\""
+      "offset": 218,
+      "length": 10,
+      "value": "\"SPEAKING\""
     },
     {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/ErrorMessage.swift",
@@ -5638,32 +6469,11 @@
       "value": "\"errorMessage\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/ErrorMessage.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/JWT\/ClaimNames.swift",
       "kind": "StringLiteral",
-      "offset": 699,
-      "length": 11,
-      "value": "\"errorCode\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 722,
-      "length": 14,
-      "value": "\"errorMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 123,
-      "length": 12,
-      "value": "\"miSpeechKit.ErrorMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/ErrorMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 123,
-      "length": 12,
-      "value": "\"miSpeechKit.ErrorMessage\""
+      "offset": 130,
+      "length": 70,
+      "value": "\"http:\/\/schemas.xmlsoap.org\/ws\/2005\/05\/identity\/claims\/nameidentifier\""
     },
     {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Audio\/AudioFormat.swift",
@@ -5687,130 +6497,60 @@
       "value": "2"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Audio\/AudioFormat.swift",
-      "kind": "IntegerLiteral",
-      "offset": 306,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Audio\/AudioFormat.swift",
-      "kind": "IntegerLiteral",
-      "offset": 413,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Audio\/AudioFormat.swift",
-      "kind": "IntegerLiteral",
-      "offset": 558,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Audio\/AudioFormat.swift",
-      "kind": "IntegerLiteral",
-      "offset": 306,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Audio\/AudioFormat.swift",
-      "kind": "IntegerLiteral",
-      "offset": 413,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Audio\/AudioFormat.swift",
-      "kind": "IntegerLiteral",
-      "offset": 558,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/EventWaitHandle.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/SpeechRecognition\/Queue\/EventWaitHandle.swift",
       "kind": "StringLiteral",
       "offset": 272,
       "length": 2,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/EventWaitHandle.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/SpeechRecognition\/Queue\/EventWaitHandle.swift",
       "kind": "BooleanLiteral",
       "offset": 310,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/RecognitionResultMessage.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/Endpoints\/Enterprise\/EnterpriseEndpointBase.swift",
       "kind": "StringLiteral",
-      "offset": 135,
-      "length": 24,
-      "value": "\"miSpeechKit.RecognitionResultMessage\""
+      "offset": 200,
+      "length": 6,
+      "value": "\"v1.0\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/RecognitionResultMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 135,
-      "length": 24,
-      "value": "\"miSpeechKit.RecognitionResultMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/StartRecognitionMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 134,
-      "length": 23,
-      "value": "\"miSpeechKit.StartRecognitionMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/StartRecognitionMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 134,
-      "length": 23,
-      "value": "\"miSpeechKit.StartRecognitionMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/RecognitionServiceProxy.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/SpeechRecognition\/RecognitionServiceProxy.swift",
       "kind": "IntegerLiteral",
       "offset": 235,
       "length": 5,
       "value": "15000"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/RecognitionServiceProxy.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/SpeechRecognition\/RecognitionServiceProxy.swift",
       "kind": "IntegerLiteral",
       "offset": 293,
       "length": 5,
       "value": "60000"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/RecognitionServiceProxy.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/SpeechRecognition\/RecognitionServiceProxy.swift",
       "kind": "BooleanLiteral",
       "offset": 1039,
       "length": 5,
       "value": "false"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/ApiProxy.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/Endpoints\/Speaking\/SpeakingEndpointBase.swift",
       "kind": "StringLiteral",
-      "offset": 163,
+      "offset": 198,
       "length": 6,
       "value": "\"v1.0\""
     },
     {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/ApiProxy.swift",
-      "kind": "StringLiteral",
-      "offset": 192,
-      "length": 19,
-      "value": "\"InformationSystem\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/ApiProxy.swift",
-      "kind": "StringLiteral",
-      "offset": 238,
-      "length": 38,
-      "value": "\"253991B3-CFF2-4488-88B3-E54D4B0A0CD1\""
+      "kind": "BooleanLiteral",
+      "offset": 843,
+      "length": 4,
+      "value": "true"
     },
     {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/SDKInfo.swift",
@@ -5848,32 +6588,39 @@
       "value": "\"BA9CA195-6E15-4939-BEC5-F41DCC05F30A\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/CleanupMessage.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/Endpoints\/Mira\/MiraEndpointBase.swift",
       "kind": "StringLiteral",
-      "offset": 125,
-      "length": 14,
-      "value": "\"miSpeechKit.CleanupMessage\""
+      "offset": 188,
+      "length": 4,
+      "value": "\"v3\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/CleanupMessage.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/Messages\/Requests\/AdaptionTextSubmitRequest.swift",
       "kind": "StringLiteral",
-      "offset": 125,
-      "length": 14,
-      "value": "\"miSpeechKit.CleanupMessage\""
+      "offset": 322,
+      "length": 8,
+      "value": "\"object\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/PushAudioMessage.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/Messages\/Requests\/AdaptionTextSubmitRequest.swift",
       "kind": "StringLiteral",
-      "offset": 127,
-      "length": 16,
-      "value": "\"miSpeechKit.PushAudioMessage\""
+      "offset": 351,
+      "length": 6,
+      "value": "\"text\""
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/PushAudioMessage.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/Messages\/Requests\/AdaptionTextSubmitRequest.swift",
       "kind": "StringLiteral",
-      "offset": 127,
-      "length": 16,
-      "value": "\"miSpeechKit.PushAudioMessage\""
+      "offset": 384,
+      "length": 12,
+      "value": "\"languageId\""
+    },
+    {
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/Messages\/Requests\/AdaptionTextSubmitRequest.swift",
+      "kind": "StringLiteral",
+      "offset": 424,
+      "length": 13,
+      "value": "\"application\""
     },
     {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Websocket\/NWConnection+Extension.swift",
@@ -5890,18 +6637,32 @@
       "value": "[]"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/StateChangedMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 130,
-      "length": 19,
-      "value": "\"miSpeechKit.StateChangedMessage\""
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/LanguageId.swift",
+      "kind": "IntegerLiteral",
+      "offset": 140,
+      "length": 4,
+      "value": "1031"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Resposes\/StateChangedMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 130,
-      "length": 19,
-      "value": "\"miSpeechKit.StateChangedMessage\""
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/LanguageId.swift",
+      "kind": "IntegerLiteral",
+      "offset": 159,
+      "length": 4,
+      "value": "1033"
+    },
+    {
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/LanguageId.swift",
+      "kind": "IntegerLiteral",
+      "offset": 178,
+      "length": 4,
+      "value": "1036"
+    },
+    {
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/LanguageId.swift",
+      "kind": "IntegerLiteral",
+      "offset": 197,
+      "length": 4,
+      "value": "2055"
     },
     {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Audio\/AudioRecorder.swift",
@@ -5932,20 +6693,6 @@
       "value": "0"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/AddWordMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 125,
-      "length": 14,
-      "value": "\"miSpeechKit.AddWordMessage\""
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Json\/Recognition\/Requests\/AddWordMessage.swift",
-      "kind": "StringLiteral",
-      "offset": 125,
-      "length": 14,
-      "value": "\"miSpeechKit.AddWordMessage\""
-    },
-    {
       "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
       "kind": "IntegerLiteral",
       "offset": 379,
@@ -5995,105 +6742,7 @@
       "value": "6"
     },
     {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 379,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 462,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 545,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 694,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 794,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 897,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 984,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 379,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 462,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 545,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 694,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 794,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 897,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/RecognitionResultAttribute.swift",
-      "kind": "IntegerLiteral",
-      "offset": 984,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/Http\/RecognitionStateQueue.swift",
+      "filePath": "\/Users\/jonascurth\/Documents\/git\/Cloud\/SDKs\/miSpeechKit\/miSpeechKit\/Internal\/SpeechRecognition\/Queue\/RecognitionStateQueue.swift",
       "kind": "Array",
       "offset": 233,
       "length": 2,

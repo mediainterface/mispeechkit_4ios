@@ -1,5 +1,6 @@
 import SwiftUI
 import WebKit
+import miSpeechKit
 
 struct LoginView: View {
     @State var user = ""
@@ -22,6 +23,14 @@ struct LoginView: View {
             }
             else {
                 errorMessage = "Anmeldung fehlgeschlagen"
+            }
+        }
+        catch let error as MISpeechError {
+            switch(error) {
+            //case .http(let message, _, _, _):
+            //    errorMessage = message
+            default:
+                errorMessage = "Ein unbekannter Fehler ist aufgetreten"
             }
         }
         catch {
@@ -49,6 +58,13 @@ struct LoginView: View {
                 Text("Authentication").font(.title)
                 
                 LoginForm(user: $user, password: $password)
+                
+                Button {
+                    Task { try await self.authenticate() }
+                } label: {
+                    Text("Login")
+                }
+
                 
                 if !errorMessage.isEmpty {
                     Text(errorMessage).foregroundColor(Color("MIRed"))
